@@ -1,6 +1,4 @@
 función y explicación del grep (ctxt).....
-
 Actividades con el debugger del sistema
-
 Instalar beye
 vmstat sintaxis

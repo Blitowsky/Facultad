@@ -4,7 +4,9 @@ anotar/buscar en tarjetas:
 	Propiedades de las funciones continuas
 	Propiedades de la derivada
 
-Resumir diagonalización
+Resumir linealización
 
+Practicar asintotas, principalmente oblicuas
 
+anotar y practicar todos los casos de factoreo
 
