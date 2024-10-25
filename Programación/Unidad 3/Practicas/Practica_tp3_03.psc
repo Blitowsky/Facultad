@@ -28,7 +28,6 @@ Algoritmo sin_titulo
 		
 		Escribir "Los lados ingresados forman un triángulo de tipo " tipo
 		
-		
 	FinSi
 	
 	
