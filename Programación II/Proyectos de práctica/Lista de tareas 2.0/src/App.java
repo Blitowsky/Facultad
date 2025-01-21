@@ -3,14 +3,16 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
+        //Variables
         int accion;
         String entrada;
 
+        //Clases instanciadas
         Scanner scanner = new Scanner(System.in);
-
         Menu menu = new Menu();
         listaPendientes pendientes = new listaPendientes();
         listaTerminados terminados = new listaTerminados();
+
 
         do{
             
@@ -24,18 +26,7 @@ public class App {
 
                     System.out.println("Ingrese una nueva tarea");
                     entrada = scanner.next();
-
-                    if (pendientes.contieneTarea(entrada)){
-            
-                        System.out.println("Ya existe la tarea ingresada");
-                    }
-                    else{
-        
-                        pendientes.agregarTarea(entrada);
-
-                        System.out.println("se agregaría una tarea");
-
-                    }
+                    pendientes.agregarTarea(entrada);
 
                 break;
 
@@ -43,15 +34,42 @@ public class App {
 
                     System.out.println("Ingrese la tarea a eliminar");
                     entrada = scanner.next();
-                    pendientes.eliminarTarea(entrada);
+
+
+                    if(pendientes.contieneTarea(entrada)){
+
+                        pendientes.eliminarTarea(entrada);
+
+                    } else System.out.println("No existe la tarea ingresada");
+
                 
                 break;
 
                 case 3:
+
+                    System.out.println("Ingrese la tarea finalizada");
+                    entrada = scanner.next();
+
+                    if(pendientes.contieneTarea(entrada)){
+
+                        pendientes.eliminarTarea(entrada);
+                        terminados.agregarTarea(entrada);
+
+                    } else System.out.println("No existe la tarea ingresada");                    
                 
                 break;
 
                 case 4:
+
+                    System.out.println("Ingrese la tarea finalizada");
+                    entrada = scanner.next();
+
+                    if(terminados.contieneTarea(entrada)){
+
+                        terminados.eliminarTarea(entrada);
+                        pendientes.agregarTarea(entrada);
+
+                    } else System.out.println("No existe la tarea ingresada"); 
                 
                 break;
 
@@ -59,27 +77,14 @@ public class App {
                 
                 break;
             }
-            System.out.println("Las tareas son:");
 
+            //Muestra por pantalla de las listas
 
-            for (String puntero : pendientes.pendientes) {
-                
-                System.out.println("La tarea número " + (pendientes.pendientes.indexOf(puntero) + 1) + " es: " + puntero);
-    
-            }
-        
-            
+            menu.imprimirListas(pendientes.pendientes, "pendiente", "pendientes");
 
+            menu.imprimirListas(terminados.terminados, "finalizada", "finalizadas");
 
         }while(accion != 0);
-
-        
-
-        
-
-
-
-
 
     }
 }
