@@ -11,7 +11,7 @@ Algoritmo sin_titulo
 	
 	Dimension listaEquipos(cantEquipos), tabla(cantEquipos,4)
 	iniciarListaEquipos(listaEquipos,cantEquipos)
-	
+
 	
 	iniciarMatriz(tabla, cantEquipos)
 	mostrarMatriz(tabla, listaEquipos, cantEquipos)
@@ -63,6 +63,7 @@ SubAlgoritmo cargarDatos(tabla, listaEquipos, indiceEquipoA, indiceEquipoB)
 	
 	tabla(indiceEquipoA,0) = tabla(indiceEquipoA,0) + calcularPuntos(golesA, golesB)
 	tabla(indiceEquipoB,0) = tabla(indiceEquipoB,0) + calcularPuntos(golesB, golesA)
+	
 	conteoGoles(tabla, listaEquipos, indiceEquipoA, golesA, golesB)
 	conteoGoles(tabla, listaEquipos, indiceEquipoB, golesB, golesA)
 	
@@ -75,7 +76,6 @@ FinSubAlgoritmo
 
 Funcion  parametro = mayorA(parametro, aPartirDe)
 	
-	
 	Mientras parametro < aPartirDe
 		
 		Escribir "El número debe ser mayor a: " aPartirDe
@@ -84,8 +84,6 @@ Funcion  parametro = mayorA(parametro, aPartirDe)
 	FinMientras
 	
 FinFuncion
-
-
 
 Funcion puntos = calcularPuntos(golesA, golesB)
 	
@@ -126,6 +124,8 @@ Funcion diferenciaGoles = calcularDiferenciaGoles(indiceEquipo, golesA, golesB)
 	diferenciaGoles = golesA - golesB
 	
 FinFuncion
+
+///--------------------------------------------------------------------------------------\\\
 
 SubAlgoritmo iniciarListaEquipos(listaEquipos, cantEquipos)
 	

@@ -37,12 +37,12 @@ Algoritmo Tateti
 					
 					jugadorGanador = i
 					
-					
 				FinSi
 				
 			FinSi
 			
 		FinPara
+		
 		turno = turno + 1	
 		
 	FinMientras
@@ -122,7 +122,7 @@ SubAlgoritmo colocarFichas(tablero, alto, ancho,nroJugador, fichaJugador)
 	
 FinSubAlgoritmo
 
-Funcion ganador = hayGanadorDiagonal(tablero, fichaJugador)
+Funcion ganador = hayGanadorDiagonal(tablero, fichaJugador) ///hacer escalable
 	
 	Definir ganador Como Logico
 	
@@ -135,11 +135,10 @@ Funcion ganador = hayGanadorDiagonal(tablero, fichaJugador)
 		FinSi
 		
 	FinSi
-
 	
 FinFuncion
 
-Funcion ganador = hayGanadorLineal(tablero, fichaJugador, linea)
+Funcion ganador = hayGanadorLineal(tablero, fichaJugador, linea) ///hacer escalable
 	
 	Definir i,j, sumaTres Como Entero
 	Definir ganador Como Logico
@@ -183,7 +182,7 @@ Funcion ganador = hayGanadorLineal(tablero, fichaJugador, linea)
 	
 FinFuncion
 
-SubAlgoritmo iniciarMatriz(tablero)
+SubAlgoritmo iniciarMatriz(tablero)///hacer escalable
 	Definir i,j Como Entero
 	
 	para i = 0 Hasta 2
@@ -197,7 +196,7 @@ SubAlgoritmo iniciarMatriz(tablero)
 	
 FinSubAlgoritmo
 
-SubAlgoritmo mostrarMatriz(tablero)
+SubAlgoritmo mostrarMatriz(tablero)///hacer escalable
 	
 	Definir i,j Como Entero
 	
