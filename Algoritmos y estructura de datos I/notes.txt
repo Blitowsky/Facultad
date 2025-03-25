@@ -1,0 +1,39 @@
+Ver video antes de la clase del miércoles
+
+
+que es un algoritmo?
+
+Estructura de datos: forma particular de organizar datos para que sean utilizados en un algoritmos
+
+la mejor estructura de datos: arrayList
+
+Link list, list, spanning tree, tree, graph, stack, hashing
+
+eficiencia, creatividad y pensamiento
+
+usaremos un subset de Python, aunque está capado 
+
+
+
+PROMOCIONAL: 100% de los prácticos aprobados en tiempo y forma y aprobar los 2 parciales en la primera instancia
+REGULARIDAD: 100% de los prácticos aprobados y aprobar ambos parciales en cualquier instancia 
+
+
+Lunes: Clase práctica, consultas y práctica en pizarra
+Martes: vence entrega práctico
+Miercoles: tema nuevo
+En casa: videos y realizar TP
+Clase: consultas y presentación de TP
+
+
+Operaciones elementales en arreglos:
+Insert(Arreglo,posI,entrada) -> Arreglo[posI] = entrada
+Acces(Arr,posI) -> Arr[10]
+
+memoria, conjunto de operaciones
+
+TAD: Tipo Abstracto de Dato
+
+
+
+
