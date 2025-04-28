@@ -32,7 +32,121 @@ Acces(Arr,posI) -> Arr[10]
 
 memoria, conjunto de operaciones
 
-TAD: Tipo Abstracto de Dato
+TAD: Tipo Abstracto de Dato / concepto abstraco que no necesariamente está implementado en el lenguaje 
+especificación y serie de operaciones elementales
+
+El arreglo es una porción de memoria continua
+
+TAD secuencia -> implementados a partir de un arreglo
+
+-------------------------------COMPLEJIDAD-----------------------------------
+
+Complejidad espacial: cantidad de memoria que demanda un programa
+Complejidad temporal: cantidad de tiempo que demanda el programa
+
+Quitando los detalles como arquitectura o lenguaje, las complejidades serán semejantes.
+Esto dice el principio de invarianza:
+La diferencia entre dos posibles implementaciones va a ser a lo sumo, un escalar
+
+
+
+
+Operaciones elementales:(Cuentan como 1 OE)
+    -Operaciones aritméticas básicas
+    -Asignaciones a variables de tipo predefinido por el compilador
+    -Saltos(llamadas a funciones)
+    -Comparaciones lógicas
+    -Acceso a estructuras indexadas básicas(vectores y matrices)
+
+T(c) -> Tiempo de evaluación del condicional
+T(s) -> Tiempo de ejecución del código dentro de la estructura
+T(Pn) -> Tiempo de evalación de un parámetro
+
+
+
+Condicional if:
+
+---------------
+if c:
+    s1
+else:
+    s2
+---------------
+ 
+   T= T(c) + max{T(s1), T(s2)}
+
+Función:
+
+---------------
+F(P1,P2,...,Pn)
+---------------
+    T= 1(salto) + T(P1)+T(P2)+...+T(Pn) + T(F)
+
+    T(F)= T(Op) + T(R)
+    
+T(Op) -> Tiempo de las operaciones realizadas dentro de la función
+T(R) -> Tiempo de evaluar el retorno (salto) + su valor : 2OE
+
+Bucle while:
+
+---------------
+while c:
+    s
+---------------
+    T= T(c) + (n°iteraciones) * (T(s) + T(c))
+
+Bucle for:
+
+    Se calcula expresándolo como un bucle while
+
+
+
+-------------------------------COMPLEJIDAD TEORICA-----------------------------------
+
+la c de la función de invarianza determina la función usada como cota superior
+
+la idea es poner el techo lo mas cerca posible para acotar al mínimo la diferencia o reducir al mínimo el escalar c
+
+la notación refiere al peor de los casos posibles
+
+la funcion constante se relaciona a operaciones basicas
+
+la cuadrática a iteraciones anidadas
+
+mientras mas bucles el exponente de n aumenta
+
+el orden de complejidad logarítmico está asociada a funciones recursivas
+
+los crecimientos exponenciales y factoriales se aplican cuando en cada operación se duplica o multiplica la cantidad de operaciones siguientes
+
+
+
+-------------------------------PILAS Y CONTADOR-----------------------------------
+
+hay tipos de datos de tipo apuntador, este dato almacena una posición de memoria donde se almacenó lo que quicimos guardar, no un dato específico
+
+funciones de las pilas (LIFO):
+push() coloca un elemento al comienzo de la lista, es totalmente equivalente a la funcióń add()
+
+pop() elimina el primer elemento de la lista, aka devincula el primer elemento y devuelve su valor
+
+enque() agrega un elemento a la lista, lo encola, probablemente al inicio. no hay diferencia con el push() por lo tanto es idéntico al add()
+
+deque() recorre toda la lista y desvincula el último nodo (colas comunes y corrientes) y devolver el valor del mismo
+
+COLA POR PRIORIDAD: no es un fifo, es aquel que tenga lo que nosotros definamos como mayor prioridad
+
+value: 
+nextNode: 
+priority: 
+
+
+
+ 
+
+
+
+
 
 
 

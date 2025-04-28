@@ -1,0 +1,3 @@
+investigar sobre gauss splatting
+encontrar relación con los ángulos entre los segmentos formados por tres puntos € circunferencia
+

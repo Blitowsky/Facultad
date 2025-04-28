@@ -1,4 +1,5 @@
 from algo1 import *
+import array 
 def create_set(array):
 
     array_auxiliar = Array(len(array),0.0)
@@ -37,7 +38,7 @@ def unir_vectores(set_1, set_2):
     return nuevo_vector
 
 def concatenar_arrays(X, Y):
-    nuevo = Array(len(X) + len(Y), 0)
+    nuevo = Array(len(X) + len(Y), "c")
     
     for i in range(len(X)):
         nuevo[i] = X[i]
