@@ -1,28 +1,49 @@
 from linkedlist import *
 
+
 P = LinkedList
 
 def enqueue(Q,element):
     add(Q,element)
 
 def dequeue(Q):
-    max = length(Q)
-    if max == 0: return None
-    elif max == 1:
-        element = Q.head.value
-        delete(Q,element)
-        return element
-    else:
-        element = nodeByIndex(Q,max-1).value
-        nodeByIndex(Q,max-2).nextNode = None
-        return element
-add(P,1)
-add(P,2)
-add(P,3)
-add(P,4)
+    currentNode = Q.head
+    if Q.head == None:
+        return None
+    elif Q.head.nextNode == None:
+        valor = Q.head.value
+        Q.head = None
+        return valor
+    elif currentNode.nextNode == None:
+        valor = currentNode.nextNode
+        currentNode.nextNode = None
+        return valor
+
+    i = 0
+    valor = None
+
+    while(currentNode != None):
+        
+        if currentNode.nextNode.nextNode == None:
+            valor = currentNode.nextNode.value
+            currentNode.nextNode = None
+            return valor
+
+        currentNode = currentNode.nextNode
+        i = i + 1 
 
 
 
-printLinkedList(P)
-print(dequeue(P))
-printLinkedList(P)
+L=LinkedList()
+enqueue(L,"hola")
+enqueue(L,"jorge")
+enqueue(L,"como")
+
+printLinkedList(L)
+
+print(dequeue(L))
+
+print(dequeue(L))
+print(dequeue(L))
+print(dequeue(L))
+

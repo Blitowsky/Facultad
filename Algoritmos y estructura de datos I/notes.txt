@@ -141,10 +141,71 @@ nextNode:
 priority: 
 
 
+-------------------------------     ARBOLES     ----------------------------------
 
- 
+Los árboles poseen nodos con jerarquía, SON estructuras jerárquicas 
+estructura dinámica y no lineal, como por ejemplo, las linked lists
+es no lineal porque a un nodo pueden sucederle varios nodos
+
+Un ejemplo puede ser una estructura de mando en algúna organización 
+
+Tipos de nodo en un árbol: 
+        -Raiz, rama y hoja
+        -Altura y niveles: por cada nueva generación auenta un nivel. Ej: raiz = 1, ramas= 2 | n-1, Hojas= n
+        -Grados: cantidad máxima permitida de salidas por nodo
+        -Peso: suma directa de la cantidad de nodos en el árbol
 
 
+TIPOS DE ÁRBOLES:
+
+    NOSOTROS: vamos a trabajar con árboles binarios, es decir, de grado máximo 2 
+
+    árbol binario balanceado: los subárboles poseen la misma altura
+
+    árbol binario no balanceado: Los subárboles NO poseen la misma altura
+
+    árbol completo: ambos árboles tienen la misma latura y ambos subárboles poseen la misma cantidad de hijos
+
+    -Árbol binario de búsqueda:
+        los nodos de la izquierda son menores al padre
+        los nodos de la derecha son mayores al padre
+
+OPERACIONES CON ÁRBOLES:
+    + Recorrido Pre Orden: Arranca por la raiz y va completando los caminos hacia cierto lado, como el método para resolver laberintos :)
+    + Recorrido In Orden: Empieza por el final lateral del primer subárbol (si existe)
+    + Recorrido en Amplitud: Recorre por niveles hasta agotarlo y baja al siguiente| Arranca en la raíz y termina en el nivel inferior
+    + Recorrido Post Orden: recorre en post orden cada uno de los subárboles y deja la raíz para el final
+
+
+Operación para construir e insertar en un árbol binario
+
+    si deseo eliminar un nodo con un hijo, debo revincular el hijo al padre del nodo en cuestión y luego eliminarlo
+    
+
+
+RECURSIVIDAD
+
+una funcion que se llama a sí misma
+
+caso/s bases o caso/s triviales y luego un caso general 
+
+factorial y fibonacci
+
+recursividad directa: un módulo que se llama a sí mismo
+recursividad indirecta: 
+
+
+el peor caso de un arbol binario de búsqueda no es O(log n), es O(n)
+
+en promedio, si es de O(log n) si el árbol es balanceado se cumplirá, pero para casos en los que quede un árbol con una sola linea de sucesores
+no será de O(log n), será O(n)
+
+
+
+
+
+funciones recursivas:
+si el parámetro que tengo que evaluar es el mismo que retorna la función, debo asignárselo a una variable auxiliar y luego evaluarlo 
 
 
 

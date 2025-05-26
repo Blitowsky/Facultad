@@ -12,8 +12,3 @@ def pop(S):
     element = S.head.value
     S.head = S.head.nextNode
     return element
-
-printLinkedList(P)
-print(pop(P))
-printLinkedList(P)
-

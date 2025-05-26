@@ -1,35 +1,70 @@
 from linkedlist import *
+from mystack import *
+from myqueue import *
 
 class PriorityQueue:
     head=None
-
 class PriorityNode:
     value=None
     nextNode=None
     priority=None
 
-def enqueue_priority(Q,element,priority):
+def enqueue_priority(Q,value,priority:int):
+    newNode = PriorityNode()
+    newNode.value = value
+    newNode.priority = priority
 
     
+    if Q.head == None:
+        Q.head = newNode
+        return 0
+    elif Q.head.priority < priority:
+        newNode.nextNode = Q.head
+        Q.head = newNode
+        return 0
+    
+    i = 0
+    currentNode = Q.head
 
+    while(currentNode != None):
+        if currentNode.priority <= priority:
+            while(currentNode!= None):
+                
+                if currentNode.nextNode == None:
+                    currentNode.nextNode = newNode
+                    return i
+                elif currentNode.nextNode.priority != priority:
+                    newNode.nextNode = currentNode.nextNode
+                    currentNode.nextNode = newNode
+                    return i
+                i = i +1
+                currentNode = currentNode.nextNode
 
-def printLinkedList(L):
+        elif currentNode.nextNode == None:
+            currentNode.nextNode = newNode
+            return i
+        i = i +1
+        currentNode = currentNode.nextNode
+    return None
 
-    current_node = L.head
-
-    print("-------------------")
-    while(current_node.nextNode != None):
-        print(" V:",current_node.value," P:", current_node.priority)
+def printLinkedListPriority(Q):
+    current_node = Q.head
+    
+    print("{")
+    while(current_node != None):
+        print(" Value:",current_node.value, "| Priority", current_node.priority)
         current_node = current_node.nextNode     
-    print("-------------------")
+    print("}")
 
-Q = PriorityQueue
+def dequeue_priority(Q):
+    if Q.head == None: return None
+    else: 
+        valor = Q.head.value
 
-print(enqueue_priority(Q,"a",5))
-print(enqueue_priority(Q,"b",2))
-print(enqueue_priority(Q,"c",0))
+        if Q.head.nextNode == None:
+            Q.head = None
+        else:
+            Q.head = Q.head.nextNode
 
-# printLinkedList(Q)
-print(Q.head.value)
-print(Q.head.nextNode.value)
-#print(Q.head.nextNode.nextNode.value)
+        return valor
+
