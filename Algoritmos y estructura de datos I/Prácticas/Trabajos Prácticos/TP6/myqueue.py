@@ -32,18 +32,3 @@ def dequeue(Q):
         currentNode = currentNode.nextNode
         i = i + 1 
 
-
-
-L=LinkedList()
-enqueue(L,"hola")
-enqueue(L,"jorge")
-enqueue(L,"como")
-
-printLinkedList(L)
-
-print(dequeue(L))
-
-print(dequeue(L))
-print(dequeue(L))
-print(dequeue(L))
-

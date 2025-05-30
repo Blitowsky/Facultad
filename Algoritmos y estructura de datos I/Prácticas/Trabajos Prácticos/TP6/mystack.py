@@ -1,10 +1,10 @@
 from linkedlist import *
 
-P = LinkedList
+P = LinkedList()
 
 
 def push(S,element):
-    addLiFo(S,element)
+    addFiFo(S,element)
 
 def pop(S):
 
