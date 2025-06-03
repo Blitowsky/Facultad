@@ -139,6 +139,7 @@ def length(L):
             count = count + 1
             currentNode = currentNode.nextNode
         return count
+    
 
 def printLinkedList(L):
 
