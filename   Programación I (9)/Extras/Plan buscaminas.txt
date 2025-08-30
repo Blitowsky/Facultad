@@ -1,0 +1,7 @@
+Campo 20 x 20
+
+40 minas
+
+posiciones aleatorias para las minas y luego completar el resto de casillas con " " o con "-" 
+
+minas ---- casillas blancas ---- numero de minas

@@ -1,0 +1,38 @@
+
+
+1) logica proposicional:
+        lenguaje formal
+        Método de inducción (1.7)
+
+2) Conjuntos:
+        Operaciones
+        Propiedades
+        Producto cartesiano
+        Subconjuntos
+
+3) Relaciones:
+        Producto cartesiano
+        propiedades: reflexiva
+                     simétrica
+                     antisimétrica
+                     transitiva
+
+
+
+
+familia de conjuntos pasa al final
+
+--------------------------
+
+A = {1,2,4,6}
+
+A x A = {(1,1), (1,2), (1,4), (1,6)
+         (2,1), (2,2), (2,4), (6,6)
+         (4,1), (4,2), (4,4), (2,6)
+         (6,1), (6,2), (6,4), (4,6)}
+
+R = {x|x divide y para (x,y) € A x A}
+
+esto implica división entera
+
+

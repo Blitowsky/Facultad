@@ -1,0 +1,5 @@
+/target/
+*.sqlite
+database1
+concesionaria.db
+*.concesionaria.db

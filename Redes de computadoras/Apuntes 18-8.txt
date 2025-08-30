@@ -1,0 +1,21 @@
+Algunos protocolos descartan la trama, otros intentan corregir la trama
+
+a partir del mismo algoritmo se trata de detectar y corregir el error
+
+la capacidad de detección es superior a la de corrección
+
+mensaje de reconocimiento: confirma el estado de la llegada de la trama
+
+temporizadores entre envío de paquetes
+
+Números de secuencia o de identificación: Usado para detectar paquetes ya recibidos
+
+sin identificador de paquete, no se puede realizar el reenvío de datoa
+
+Trama: conjunto de datos organizados de una determinada manera
+
+Para aprovechar los envios de paquetes se puede integrar el acuse de recibo en otra trama en dirección contraria
+
+Static: cada emisor tiene su frecuencia asignada y no puede salir de ella
+
+

@@ -1,0 +1,3 @@
+función y explicación del grep (ctxt).....
+Actividades con el debugger del sistema
+dudas sobre el tp3, casi todo lo que involucra direcciones de memoria

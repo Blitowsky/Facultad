@@ -1,0 +1,124 @@
+
+Puntos clave en la construcción de sistemas modernos:
+Tiempo para finalizar el software
+costos de desarrollo
+detección de errores previo al lanzamiento
+tiempo y esfuerzo dedicado a la manutención de los programas existentes
+medición del avance mientras se desarrolla y mantiene el software
+
+
+
+El software es:
+Programas que proporcionan las características, función y desempeño
+
+Estructuras de datos que ayudan a los programas
+
+Información descriptiva sobre la operación y uso de los programas
+
+
+El software es elemento de un sistema lógico y no de uno físico
+
+La curva de tina relaciona la tasa de fallo con el tiempo en el hardware
+
+
+La curva de fallos del software depende de los cambios que se apliquen, es casi inevitable agregar errores al modificar un programa lo que implica un pico que gradualmente se aplana mientras aparecen, se identifican y corrigen los errores.
+Los reiterados cambios generan que el piso de los errores vaya subiendo gradualmente
+
+El cambio deteriora al software
+
+La curva real difiere de la idealizada
+Para reducir el deterioro del software, la solución es mejorar el diseño y la calidad
+La ingeniería de software reduce los picos y la magnitud de la curva real
+
+
+----------------
+
+Dominios de aplicación del software
+
+Software de sistemas:
+    Conjunto de programas escritos para dar servicio a otros programas
+    Gran interación con el hardware de la computadora
+    Uso intensivo por usuarios múltiples
+    Requiere secuenciación recursos compartidos y administración de un proceso sofisticado
+    Estrucuturas complejas de datos e interfaces externas múltiples
+
+Software de aplicación:
+    Programas aislados que resuelven una necesidad específica de negocios
+    Facilita las operaciones de negocios o la toma de decisiones administrativas o técnicas
+    Controla funciones de negocios en tiempo real
+
+Software de ingeniería y ciencias:
+    Algoritmos que trabajan con grandes cantidades de números
+    Sus aplicaciones se están cubriendo con software de sistemas
+
+Software incrustado:
+    Reside dentro de un producto o sistema y se usa para implementar y controlar características y funciones para el usuario final y para el sistema en sí
+    Ejecuta funciones limitadas y particulares
+
+
+
+Software de linea de productos:
+    Proporciona una capacidad específica para uso de muchos consumidores diferentes
+    Puede estar orientado tanto a un mercado limitado y particular como a mercados pasivos de consumidores
+
+Aplicaciones web:
+    Centrado en redes, agrupa una amplia gama de aplicaciones
+
+Software de inteligencia artificial:
+    Hacen uso de algoritmos no numéricos para resolver problemas complejos que no son fáciles de tratar computacionalmente o con el anáslisis directo
+
+Desafíos a futuro
+    Computación en un mundo abierto
+    construcción de redes
+    fuente abierta
+
+
+Motivaciones para la evolución del Software
+    Necesidad de adaptarse a nuevos ambientes del cómputo y de la tecnología
+    Necesidad de implementar nuevos requerimientos
+    Operabilidad en otros sistemas o bases de datos modernos
+    Adaptación a un ambiente de redes
+
+
+Atribtos de las webapps:
+    Uso intensivo de redes
+    Concurrencia
+    Carga impredecible
+    Rendimiento
+    Disponilidad
+    Orientadas a los datos
+    Contenido sensible
+    Evolición continua
+    Inmediatez
+    Seguridad
+    Estética
+
+En la actualidad debemos tener en cuenta algunas premisas al momento de desarrollar software:
+    Entender el problema antes de dar una solución
+    Generar un buen diseño
+    Debemos procurar una alta calidad
+    Debe tener facilidad para recibir mantenimiento
+
+Cualquier enfoque de ingeniería debe comprometerse con la calidad
+
+Capas de la ingeniería de Software
+    Herramientas
+    Métodos
+    Proceso
+    Compromiso con la calidad
+
+El fundamento de la ingeniería de software es la capa de proceso, esta aglutina las capas de tecnología y permite el desarrollo racional y oportuno del software de cómputo
+
+
+
+PROCESO DE SOFTWARE:
+es un conjunto de actividades, acciones y tareas que se ejecutan cuando va a crearse algún producto del trabajo
+
+Una actividad busca lograr un objetivo amplio y se desarrolla sin importar el dominio de la aplicación, tamaño del proyecto complejidad del esfuerzo o grado de rigor con el que se usará la inteniería de software.
+
+
+A lo largo del proceso se aplica un conjunto de actividades sombrilla
+estas actividades son seguimiento y control del proyecto, administración de riesgos, aseguramiento de la caliadad, administración de la configuración, revisiones técnicas, etc
+
+
+

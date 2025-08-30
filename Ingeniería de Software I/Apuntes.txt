@@ -1,0 +1,110 @@
+
+
+Definición y relaciones 
+
+el concepto de la ingeniería de software nace en 1968
+
+Hay que preveer la expansión a futuro del software
+
+Síntomas de la "Crisis del software"
+	Espectativas
+	Fiabilidad
+	Costo
+	Facilidad de modificación
+	Plazos
+	Portabilidad
+	Eficiencia
+
+Aplicación de procedimentos
+
+La ingeniería es el artede hacer aplicaciones prácticas de los conocimientos científicos 
+
+Los ingenieros diseñan cosas para empresas
+
+
+La ingeniería es un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento del software
+Esto a través de métodos, teorías y herramientas
+
+
+Principios fundamentales:
+Software confiable y eficiente
+
+Abarca todos los aspectos de la producción de sotware
+
+1. Especificación
+2. Desarollo
+3. Validación
+4. Evolución 
+
+
+Diferencias de Teorías métodos y herramientas
+
+Teoría: 
+
+Métodos: Una receta, un algoritmo
+
+Herramientas: 
+
+
+Las ciencias de la computación se enfoca en teorías y fundamentos
+La igeniería tiene un enfoque práctico
+
+
+--------------------------------------- 29/08/2025 ----------------------------------------
+
+Sistenas de información
+
+Entrada, proceso y salida con una retroalimentación que retorna a la entrada
+
+minería de datos: pañales y cerveza
+
+Gestión de la información:
+facilitar la innovación
+
+Para poder competitir debe tener sistemas eficientes y [Falta]
+
+estrategia de negocio -> Software -> ( , , ) [Falta]
+
+antes de poner tecnología, hay que analizar la factibilidad del proceso al que se le va a aplicar (pavimentar el camino de las vacas)
+
+Sistemas de información € (Organización, administración y tecnología)
+
+para lograr factibilidad debemos involucarar al usuario en el diseño
+también existe la factibilidad política
+
+debes conformar tanto al que lo paga como al que lo usa
+
+
+para garantizar el desempeño, los procesos de negocios deben estar optimizados.
+
+La información consume la atención de sus destinatarios
+
+
+
+La relación de calidad y cantidad genera una pirámide
+
+1°  Inteligencia ::  ::
+2°  Conocimiento :: G :: Anticiparse a los acontecimientos
+3°  Información :: de la organización y tratamiento de a los datos :: Responder a eventos
+4°  Hechos objetivos aislados :: registrar eventos
+
+Para que el dato se convierta en información dbe estar en el contexto adecuado, sirve para la toma de decisiones y para el control
+
+La información tiene que ser exacta, oportuna y útil
+
+datos -> información -> conocimiento
+
+BSC : Balance Score Cut
+
+-  SSE
+-  SIA/SSD : Tablero de control
+-  SAO/STC : no modifica la información
+-  SPO
+
+SSD : Sistema de soporte de decisiones
+
+
+
+
+
+

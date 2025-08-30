@@ -1,0 +1,9 @@
+7E0012920013A200403A3BF8000001010013000003F3 : trama de ejemplo
+
+7E                                              : Bandera
+00 12                                           : Longitud
+92                                              : Tipo de trama
+00                                              : Identificador de trama
+92 00 13 A2 00 40 3A 3B F8 00 00 01 01 00 13 00 00 03 : Carga útil?
+F3                                              : Checksum
+

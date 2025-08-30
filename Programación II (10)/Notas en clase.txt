@@ -1,0 +1,76 @@
+				Apuntes 
+
+clase 5/8/2024
+
+	La calificacion va en funciona al tiempo de entrega y la completitud
+	
+	Principales lenguajes: Java y Python
+	
+	
+...................................................................
+
+Interpretados y compilados
+
+
+Interpretado:Python
+
+ocupa lo mínimo y necesario
+
+Java es un punto medio, su código pasa por un compilado para bite codes, para al ejecutarlo pasar al intérprete
+crea un .class que oculta el código y está pre compilado, eliminando errores de tipeo o cualquier otro (código limpio).
+Este no depende de la plataforma en la que se esté ejecutando
+
+Java implementa una máquina virtual, haciéndolo mas estable
+JVM java virtual machine
+esta máquina virtual le pide recursos al OS, este se los asigna y la máquina los maneja internamente de forma controlada
+Lo que evita es salirse de sus propios límites, evitando crashes por invasión de procesos 
+
+
+
+Java Development Kit (interpretación y ejecución)
+JRE (solamente ejecuta el código realizado en el desarrollo)
+
+Compilado: C  
+
+Tipos de segmentación
+
+Open source no es lo mismo que codigo abierto
+
+
+(Sistema inseguro)
+los pantallazos azules son porque un programa excede el tamaño asignado y escribe sobre los procesos del propio sistema operativo generando un sistema inestable 
+
+Programación estructurada: declaro var, empiezo código, algoritmo principal, eventualmente llamo a una función 
+tengo un programa principal y funciones que devuelven valores
+
+consecucion de eventos
+
+Programación orientada a objeto: 
+se centra en los objetos, con un diseño especializado, neceistas hacer una abstracción, generar las clases y a partir de ellas generar los objetos
+
+clases o elementos que tienen atributos y métodos y características
+
+comportamientos
+
+Clase es la caracterización de algo (abstracción de un objeto)
+
+Modo UML
+
+Clase: silla
+
+Atributos: tapizado, color, tamaño
+
+Métodos: se puede mover, declara su funcionamiento
+
+
+sobrecargar: tener que sobreescribir un método
+
+Clase en mayúscula y objetos en minúscula 
+
+void: no devuelve, salida del método
+
+
+
+
+DUDAS: 
+tema segmentación

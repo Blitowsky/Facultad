@@ -1,0 +1,45 @@
+
+El protocolo TCP se encarga de la capa de red en adelante
+
+los errores provienen de la capa física, en ella se pueden modificar o perder bits
+
+Problemas puntuales de la capa física:
+atenuación, el propio viaje de la corriente genera una pérdida de energía
+
+Al apmlificar las señales aparece mas ruido y distorción
+
+las ondas al apmlificarse conservan la frecuencia pero no la amplitud
+
+
+
+Frecuencia wifi: 2,41GHz
+
+Lo que afecta la comunicación es la distorción generada por el propio transporte o el ruido que ingresa de fuentes externas
+
+La capa física es la encargada de pasar de bits a eléctrico/luz y viceversa
+
+
+MODULACIÓN:
+Se montan señales a una portadora que es la que se transmite a traves del medio
+
+las ondas montadas afectan la apmlitud y/o la frecuencia la portadora
+
+
+TRANSPORTE:
+par trenzado no-blindado UTP
+par trenzado blindado  STP
+
+La velocidad teórica de la fibra óptica es de 40Tbps
+
+
+TCP aporta confiabilidad a la transmisión
+
+la capa dice que tipo de servicio puede tener
+
+
+
+
+
+
+
+

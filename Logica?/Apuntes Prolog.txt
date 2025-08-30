@@ -1,0 +1,51 @@
+lenguajes declarativos : Prolog, Haskell, R, SQL
+lenguajes imperativos : Assembly, C, Fortran, Basic
+
+Declarativos se ejecutan a partir de un intérprete y suelen tener tiempos mas lentos que los imperativos
+
+ventajas y desventajas : intérpretes, verificabilidad, coste de ejecución , coste de producción
+
+Chomsky demostró la relación entre los lenguajes de programación y los lenguajes naturales
+
+declarativo -> indica las características de la respuesta, no así las operaciones para llegar a ella
+
+
+clausulas de Horn
+
+Sintaxis de Prolog:
+    - variables empiezan con mayúscula, las anónimas con _
+    - predicados empiezan con minúsculas
+    - :- representa implicación "inversa"
+    - , conjunción
+    - ; disyunción 
+    - . fin de la fórmula 
+
+swi-prolog.org
+
+variables anónimas: no se opera con esa variable y solo se define porque
+la estructura te lo exige
+
+"
+sum(0,X,X).
+sum(Y1,X,Z1):- 
+    Y1 > 0,
+    Y is Y1 - 1,
+    sum(Y,X,Z),
+    Z1 is Z + 1. /*no se puede poner en otra posición 
+                  * porque no tendría valor asignado.
+                  * 
+                  * Para ver el recorrido paso a paso usamos
+                  * la palabra reservada trace
+                  * 
+                  * */   
+sumnormal(X,Y,Z):-
+    Z is X + Y.
+    
+ "
+
+
+
+
+
+
+
