@@ -1,0 +1,125 @@
+h2 {   
+    color: aqua;
+    font-family: Verdana;
+}
+h3 {
+    color: green;
+}
+p {
+    color: blueviolet;
+}
+
+h2,p,h3 {
+    font-size: 20px;
+}
+.imagen-clase {
+    width: 200px;
+    border-width: 10px;
+    border-color: black;
+    border-style: solid dotted dashed;
+    border-radius: 20px; /* usamos 50% si queremos que sea un círculo*/
+}
+
+.nombre-clase{
+    color: chocolate;
+}
+
+#id-del-elemento {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+img {
+
+    padding: 15px;
+    background-color: rebeccapurple;
+    border-width: 2px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    /* o también podemos poner una detras de otra en el sentido de las agujas del reloj iniciando desde arriba 
+    si escribimos solo dos valores, se les asignará como arriba/abajo e izquierdo/derecho*/
+
+    padding: 5px, 5px, 5px, 5px;
+
+    margin: 5px;
+
+
+}
+
+img[atributo] { /* podemos segregar por atributos específicos */
+
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    /* o también podemos poner una detras de otra en el sentido de las agujas del reloj iniciando desde arriba */
+
+    padding: 5px, 5px, 5px, 5px;
+}
+
+img [atributo = "valor"] { /* podemos segregar por valores de atributos */
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+
+    --variable: xd; 
+    /* podemos asignarle ese valor a algún atributo y cambiar desde la variable todo de una sola vez
+    
+    la asignamos con atributo = var(variable)
+    */
+
+}
+
+/* hay distintos tipos de selectores
+
+de tipo
+de clase
+de id
+
+universal
+
+para ver mas fuentes podemos ir a roboto o fonts.google.com, hay que vincular las fuentes con los link en head
+
+mirar clases y unidades css para ver unidades relativas y fijas y como configurarlas
+
+
+
+PRIORIDAD DE ESTILOS (el orden va de menor a mayor especificidad, mientras mas específico, mas prioridad tiene)
+
+si le asignamos dos clases tomará en relevancia la última clase colocada en el CSS, no afecta el orden en el HTML
+
+si asignamos un estilo relacionado a una clase, tendrá prioridad a la asignación por tipo de elemento
+
+la id tiene prioridad sobre la clase
+
+el estilo en linea tiene prioridad sobre la id
+
+para forzar las prioridad agregamos !important al atributo que queremos priorizar
+
+
+COLORES
+
+# -> hexadecimal (se puede abreviar #FF00FF -> #F0F)
+
+rgb(r,g,b)
+
+rgba(r,g,b,opacidad)
+
+
+VALORES DE RESPALDO
+
+var(variable, valor-de-respaldo)
+
+internet explorer no reconoce las variables CSS
+
+otra forma de poner un respado es colocar la propiedad dos veces, el valor superior es el de respaldo y es algo seguro
+de esta manera, si el segundo falla tomará el primero, si no falla tomará el segundo
+
+
+
+*/
