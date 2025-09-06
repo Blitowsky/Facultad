@@ -1,0 +1,17 @@
+
+la super red es un agrupamiento mas general
+
+
+Agotamiento de imps
+
+las ip privadas pueden repetirse en todas las redes privadas existentes
+
+hay ips que se destinan a usarse como privadas
+10.0.0.0/8     --> 16M de direcciones
+172.16.0.0/12  --> 1M de direcciones
+192.169.0.0/16 --> 65K de direcciones
+
+los paquetes tienen una ip de origen y una de destino.
+Al salir de la red privada el servidor NAT reemplaza la ip de origen por la ip pública y al entrar nuevamente, cambia la ip pública por la de destino
+
+

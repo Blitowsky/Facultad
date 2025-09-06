@@ -45,7 +45,6 @@ Métodos: Una receta, un algoritmo
 
 Herramientas: 
 
-
 Las ciencias de la computación se enfoca en teorías y fundamentos
 La igeniería tiene un enfoque práctico
 
@@ -103,7 +102,90 @@ BSC : Balance Score Cut
 
 SSD : Sistema de soporte de decisiones
 
+--------------------------------------- 5/9/2025 ----------------------------------------
 
+Parcial 10 preguntas entre unidad 1 y 2
+
+pirámide organizacional de memoria
+
+ser iterativo no es ciclo de vida
+significa que la iteratividad es una característica del ciclo de vida
+
+ABM: Alta Baja Modificación, también llamado CRUD
+
+
+Otros ciclos de vida
+	RUP:
+		tantas iteraciones como sea necesario
+		usa ampliamente UML
+		Está destinado a recibir todas las nuevas modificaciones del cliente
+		Fases:
+			Inicio/Concepción: Entender los requerimientos que quiere el cliente
+			Elaboración:
+			Construcción: Incluye diseño, programación y pruevas del sistema
+			Transición: Pasar del ambiente de desarrollo a un ambiente de funcionamiento real para encontrar las problemáticas ocultas en el desarrollo
+
+		Flujos de trabajo del proceso:
+			Modelado del negocio
+			Requisitos
+			Análisis y diseño
+			Implementación
+			Pruebas
+			Despliegue
+		Las fases se iteran hasta cumplir su objetivo
+		Usa una gran cantidad de documentación, la misma requiere mantenimiento constante al punto de que cada cambio debe ser documentado al detalle
+
+
+	Diagrama de casos de uso: Como interactuan las personas con el sistema
+	El escenario de caso de uso detalla las acciones contempladas en el diagama de casos de uso
+
+Metodologías ágiles
+	los equipos se autogestionan, no requieren un jefe como tal
+	características:
+		Procesos entrelazados
+		Sistemas desarrollados en diferentes versiones
+		Sistema de elaboración interactivo para interfaces
+
+	Historias de usuario, como los caso de uso, pero mucho mas reducido y directo
+
+	El cliente tiene que estar involucrado
+
+	Uno de los desarrolladores ejerce el rol de cliente para reducir las interacciones con el verdadero cliente (o un referente de él)
+
+	Principios:
+		Participación del cliente
+		Entrega incremental
+		Personas, no procesos
+		Adoptar el cambio
+		Mantener simplicidad
+
+	Siempre, despues de cada iteración debe haber algo de código
+
+	MANIFIESTO ÁGIL (((ENTRA EN EXAMEN)))
+
+SCRUM
+	características
+		Adopta una estrategia de desarrollo incremental
+		vasa la calidad en el conocimiento de los equipos auto organizados
+		Solapa diferentes fases del desarrollo
+
+	REGLAS (((ENTRA EN EXAMEN)))
+		roles
+			Dueño del producto
+			Equipo de desarrollo
+			Scrum Master
+		eventos
+			El Sprint
+			Reunión de planificación
+			Scrum destinatarios
+			Revisión de sprint
+			Retrospectiva de sprint
+		artefactos
+			Pila de producto
+			Pila de sprint
+			Incremento
+
+	NOMBRAR ROLES ENVENTOS Y ARTEFACTOS: EXPLICAR ALGUNOS (((ENTRA EN EXAMEN)))
 
 
 
