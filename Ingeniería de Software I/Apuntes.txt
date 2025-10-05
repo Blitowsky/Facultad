@@ -49,6 +49,9 @@ Las ciencias de la computación se enfoca en teorías y fundamentos
 La igeniería tiene un enfoque práctico
 
 
+
+
+
 --------------------------------------- 29/08/2025 ----------------------------------------
 
 Sistenas de información
@@ -101,6 +104,11 @@ BSC : Balance Score Cut
 -  SPO
 
 SSD : Sistema de soporte de decisiones
+
+
+HAY MUCHO FALTANTE EN ESTE APUNTE. REHACER DESDE TEORÍA
+
+
 
 --------------------------------------- 5/9/2025 ----------------------------------------
 
