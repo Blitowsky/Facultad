@@ -1,0 +1,79 @@
+/*.responsive-tabs {
+  margin-top:20px;
+}*/
+
+/*.responsive-tabs-container .tab-content {
+  padding:10px 20px;
+  border:1px solid #ddd;
+  border-top:none;
+}*/
+
+/*.responsive-tabs-container[class*="accordion-"] .tab-pane {
+  margin-bottom: 15px;
+}*/
+
+.responsive-tabs-container[class*="accordion-"] .accordion-link {
+  display: none; border: 1px solid #00b9ad; padding: 17px 40px 17px 20px; font-size: 14px; color: #004987; position: relative; line-height: 1.3; margin-top: -1px;
+}
+.responsive-tabs-container[class*="accordion-"] .accordion-link:after {
+    content: "+"; font-size: 16px; color: #c1d42f; position: absolute; top: 32%; right: 20px; font-family: "Roboto-Regular";}
+
+.responsive-tabs-container[class*="accordion-"] .accordion-link.active {
+    border: 1px solid #00b9ad; background: #00b9ad; color: #fff; font-family: "Roboto-Medium";
+}
+
+@media (max-width: 767px) {
+  .responsive-tabs-container.accordion-xs .nav-tabs {
+    display: none;
+  }
+  
+  .responsive-tabs-container.accordion-xs .accordion-link {
+    display: block;
+  }
+  
+  .responsive-tabs-container[class*="accordion-"] .tab-pane {
+    border:1px solid #ddd;
+    border-top:none;
+    border-width: medium 1px 1px;
+    padding: 10px 10px 0;
+ }
+/*.responsive-tabs-container .tab-content-vertical {border-top: 1px solid #00b9ad;}
+.responsive-tabs-container[class*="accordion-"] .tab-pane.active + .accordion-link{border-top: 1px solid #00b9ad;}*/
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-tabs-container.accordion-sm .nav-tabs {
+    display: none;
+  }
+  
+  .responsive-tabs-container.accordion-sm .accordion-link {
+    display: block;
+  }
+  
+  .responsive-tabs-container[class*="accordion-"] .tab-pane {
+    /*border:1px solid #ddd;
+    border-top:none;
+    border-width: medium 1px 1px;
+    padding: 10px 10px 0;*/
+ }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .responsive-tabs-container.accordion-md .nav-tabs {
+    display: none;
+  }
+  
+  .responsive-tabs-container.accordion-md .accordion-link {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsive-tabs-container.accordion-lg .nav-tabs {
+    display: none;
+  }
+  
+  .responsive-tabs-container.accordion-lg .accordion-link {
+    display: block;
+  }
+}

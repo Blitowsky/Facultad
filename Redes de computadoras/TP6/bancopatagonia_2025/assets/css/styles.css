@@ -1,0 +1,1321 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),  url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Regular.woff') format('woff'), url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Regular.ttf')  format('truetype'), url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),  url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Medium.woff') format('woff'), url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Medium.ttf')  format('truetype'), url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),  url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Bold.woff') format('woff'), url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Bold.ttf')  format('truetype'), url('https://www.bancopatagonia.com.ar/assets/fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ayra-Regular';
+  src: url('https://www.bancopatagonia.com.ar/assets/fonts/Ayra-Regular.eot?#iefix') format('embedded-opentype'),  url('https://www.bancopatagonia.com.ar/assets/fonts/Ayra-Regular.otf')  format('opentype'),
+	     url('https://www.bancopatagonia.com.ar/assets/fonts/Ayra-Regular.woff') format('woff'), url('https://www.bancopatagonia.com.ar/assets/fonts/Ayra-Regular.ttf')  format('truetype'), url('https://www.bancopatagonia.com.ar/assets/fonts/Ayra-Regular.svg#Ayra-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*RESETS*/
+a:focus { outline: none}
+a:active { outline: none}
+ul, ol {margin: 0;}
+h1, .h1, h2, .h2, h3, .h3 {margin: 0;}
+a:hover {color: #004987}
+strong {font-family: "Roboto-Bold"; font-weight: normal;}
+/**/
+.dsk { display: inline-block;}
+.tbl { display: none;}
+.mbl { display: none;}
+
+/*FLEX*/
+.flex { display: flex; align-items: center; justify-content: center; }
+
+/*BOTÓN HACETE CLIENTE*/
+#btn-hacete-cliente a { position: relative; padding-right: 10px;}
+#btn-hacete-cliente a .fa { font-size: 18px; position: absolute; top: -3px; right: 0px;}
+
+/*TOP BANNER*/
+.placeholder-top {display: none;}
+
+/*HEADER*/
+.header-bar { left: 0; top: 0; background: #fff;}
+.header-bar header {height: 95px; position: relative; z-index: 20;}
+.main-logo { text-indent: -5000px; overflow: hidden; display: block; margin-top: 46px; width: 206px; background: url(https://www.bancopatagonia.com.ar/assets/images/layout/logo+frase.svg) no-repeat; height: 38px; /*background: url(../images/layout/logo.svg) no-repeat; height: 22px;*/ }
+.header-bar .general-links {height: 57px;}
+.header-bar .general-links ul {float: right; padding-top: 12px;}
+.header-bar .general-links li {display: inline-block;}
+.header-bar .general-links a { text-transform: uppercase; margin-left: 15px;}
+.header-bar .general-links a.active { color: #c1d42f; font-family: "Roboto-Bold";}
+.header-bar .top-links { position: relative;}
+.header-bar .top-links ul { float: right; margin-right: 222px; /*margin-right: 225px;*/ margin-left: -30px;}
+.header-bar .top-links li {display: inline-block;}
+.header-bar .top-links a {font-size: 12px; margin-left: 7px; margin-right: 7px; position: relative; /**/letter-spacing: -0.1px;}
+.header-bar .top-links a:hover:after {content: ""; display: block; border-top: 4px solid #c1d42f; position: absolute; left: 0; bottom: -6px; width: 100%;}
+.header-bar .top-links .active {font-family: "Roboto-Bold";}
+.header-bar .top-links .active:after { content: ""; display: block; border-top: 4px solid #c1d42f; position: absolute; left: 0; bottom: -6px; width: 100%;}
+.header-bar .ebank { position: absolute; top: 0; right: 0;}
+.header-bar .top-links .patagonia-ebank, .cta .patagonia-ebank {display: block; background: #c1d42f url(https://www.bancopatagonia.com.ar/assets/images/layout/patagonia-ebank.svg) no-repeat; text-indent: -5000px; overflow: hidden; width: 215px; height: 54px; margin: -10px 0 0 0;}
+.header-bar .top-links .patagonia-ebank-empresas, .cta .patagonia-ebank-empresas {display: block; background: #00b9ad url(https://www.bancopatagonia.com.ar/assets/images/layout/patagonia-ebank-empresas.svg) no-repeat center center; text-indent: -5000px; overflow: hidden; width: 215px; height: 54px; margin: -10px 0 0 0; background-size: contain}
+.cta .patagonia-ebank, .cta .patagonia-ebank-empresas {margin: 0 0 10px 0; display: inline-block;}
+.header-bar .header.spacer {height: 95px;}
+/**/
+.nav-bar { background: #004987; /*background: rgb(0,185,173);
+background: -moz-linear-gradient(-45deg, rgba(0,185,173,1) 0%, rgba(0,73,135,1) 50%);
+background: -webkit-linear-gradient(-45deg, rgba(0,185,173,1) 0%,rgba(0,73,135,1) 50%);
+background: linear-gradient(135deg, rgba(0,185,173,1) 0%,rgba(0,73,135,1) 50%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b9ad', endColorstr='#004987',GradientType=1 );*/ position: relative; z-index: 10;}
+.sub-navbar { margin-left: -15px;}
+.nav-bar .nav-item {display: inline-block; margin-right: 38px; position: relative;}
+.nav-bar .nav-lnk {font-size: 12px; color: #fff; height: 47px; display: block; padding-top: 19px;}
+.nav-bar .nav-lnk:hover:after, .nav-bar .nav-lnk.active:after {content: ""; display: block; border-top: 4px solid #c1d42f; position: absolute; left: 0; bottom: 0; width: 100%;}
+.nav-bar .submenu { position: absolute; left: 0; top: 47px; background: #fff; padding: 18px 13px; width: 260px; display: none;}
+.nav-bar .submenu li { margin-bottom: 15px;}
+.nav-bar .submenu li:last-child { margin-bottom: 0;}
+.nav-bar .submenu a {font-size: 13px; position: relative; display: inline-block;}
+.nav-bar .submenu a:hover { color: #004987;}
+.nav-bar .submenu a:hover:after {content: ""; display: block; border-top: 2px solid #c1d42f; position: absolute; left: 0; bottom: -6px; width: 100%;}
+.nav-bar .nav-item:hover .nav-lnk:after {content: ""; display: block; border-top: 4px solid #c1d42f; position: absolute; left: 0; bottom: 0; width: 100%;}
+.nav-bar .menu-spacer {height: 47px;}
+/**/
+.c-hamburger {display: none;}
+.mobile-nav-bar {display: none;}
+
+/*MAIN SLIDER*/
+.home-slider { margin-bottom: 55px; height: 320px; overflow: hidden;}
+.home-slide {height: 320px; background-repeat: no-repeat; background-position: center top; background-size: cover; background-color: #012d5a; /*background-color: #ccc;*/}
+.home-slide a {display: block; height: 100%;}
+.slick-dots { position: absolute; left: 0; bottom: 15px; width: 100%; text-align: center; /*z-index: 100*/;}
+.slick-dots li {list-style: none; display: inline-block;}
+.slick-dots button { text-indent: -5000px; background: none; border: 2px solid #e3e3e3; width: 20px; height: 20px; margin-left: 5px; margin-right: 5px; border-radius: 100%; position: relative; display: inline-block;}/* border: 2px solid #fff; */
+.slick-dots .slick-active button:after { content: ""; display: block; width: 12px; height: 12px; background: #e3e3e3; position: absolute; left: 2px; top: 2px; border-radius: 100%;}/* background: #fff; */
+/**/
+.slide-card {padding: 27px; background: rgb(0,185,173);
+background: -moz-linear-gradient(-45deg, rgba(0,185,173,1) 0%, rgba(0,73,135,1) 100%);
+background: -webkit-linear-gradient(-45deg, rgba(0,185,173,1) 0%,rgba(0,73,135,1) 100%);
+background: linear-gradient(135deg, rgba(0,185,173,1) 0%,rgba(0,73,135,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b9ad', endColorstr='#004987',GradientType=1 ); margin-top: 55px; max-width: 334px}
+.slide-card h2 {margin: 0 0 14px 0; color: #fff;}
+.slide-card h4 {font-size: 22px; font-family: "Ayra-Regular"; color: #fff; margin: 0 0 20px 0;}
+.slide-card .with-border { position: relative; margin-bottom: 25px;}
+.slide-card .with-border:after { content: ""; display: block; border-top: 3px solid #c1d42f; width: 30px; position: absolute; left: 0; bottom: -15px;}
+.slide-card p { font-size: 14px; color: #fff; margin: 0; line-height: 1.4;}
+
+/*FOOTER*/
+.footer-bar { background: #eeeeee; padding-top: 38px; padding-bottom: 16px;}
+.flnks { font-size: 12px; font-family: "Roboto-Medium"; text-align: center; margin-bottom: 14px; line-height: 2.2; color: #004987}
+.flnks a {display: inline-block; margin-left: 10px; margin-right: 10px;}
+.flegal { font-size: 11px; text-align: center; margin-bottom: 15px; line-height: 1.2; color: #004987;}
+.flegal:last-child {margin-bottom: 0;}
+.redes {text-align: center; margin: 10px auto 25px auto; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; color: #004987;}
+.redes span {padding-right: 6px;}
+.redes a { font-size: 20px; margin-left: 6px; margin-right: 6px;}
+/**/
+footer .redes a img { width: 18px; height: 18px;}/*icons redes para agregar atributo alt*/
+
+/*MARGINS*/
+.mb60-h {margin-bottom: 60px;}
+.mb50-h {margin-bottom: 50px;}
+.mb40-h {margin-bottom: 40px;}
+.mb30-h {margin-bottom: 30px;}
+.mb20-h {margin-bottom: 20px;}
+.mb15-h {margin-bottom: 15px;}
+.mt30 {margin-top: 30px;}
+/**/
+.equal-height {display: -ms-flexbox; display: flex; flex-wrap: wrap}
+
+/*HOME*/
+.h-destacado a { position: relative; margin-bottom: 25px; display: block; /*agregado: margin y display*/}
+.h-destacado a figure { padding-bottom: 23px;}
+.h-destacado a figcaption { position: absolute; left: 0; bottom: 0; background: #1A355F; font-size: 17px; /*text-transform: uppercase;*/ font-family: 'Roboto-Regular'; /*font-family: "Ayra-Regular";*/ color: #fff; height: 42px; padding: 13px 15px 5px 15px; /*width: 262px;*/ width: 100%; }
+.h-destacado a .logo-club { margin-top: -2px;}
+.h-destacado a, .h-destacado-xl a { border-radius: 25px; overflow: hidden; display: block; }
+.h-destacado a .dest-xl-mbl { display: none; }/* nuevo */
+/**/
+.dest-xs-tbl, .dest-xs-mbl { display: none; /*width: 100%;*/ }/* nuevo */
+/**/
+.h-destacado-2 {position: relative; padding-bottom: 35px; height: 100%;}
+.h-destacado-2 h3 { font-size: 18px; margin: 0; line-height: 1.3;}
+.h-destacado-2 .lnk { font-size: 11px; text-transform: uppercase; display: inline-block; padding-right: 12px; position: absolute; padding-bottom: 7px; left: 0; bottom: 0;}
+.h-destacado-2 em { font-style: normal; color: #c1d42f;font-size: 15px;}
+.h-destacado-2 .lnk:after {content: ""; display: block; border-top: 3px solid #c1d42f; position: absolute; left: 0; bottom: 0; width: 100%;}
+/**/
+.h-aviso { background: #004987; text-align: center; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; height: 39px; transition: all 0.3s ease;}
+.h-aviso h4 { margin: 0; font-size: 13px; text-transform: uppercase; color: #fff;}
+.h-aviso span { display: inline-block; border: 1px solid #fff; font-size: 11px; text-transform: uppercase; color: #fff; padding: 2px 10px 0 10px; margin-left: 17px; height: 22px;}
+.h-aviso em { font-style: normal; color: #c1d42f; font-family: "Roboto-Medium"; font-size: 14px;}
+.h-aviso:hover { background: #00b9ad;}
+/**/
+.h-aviso-2 { background: #fff; border: 1px solid #d2d2d2; text-align: center; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; height: 39px; transition: all 0.3s ease; }
+.h-aviso-2 h4 { color: #004987; font-size: 14px; margin: 0; text-transform: uppercase; }
+.h-aviso-2 span { color: #004987; border: 1px solid #d2d2d2; display: inline-block; font-size: 11px; text-transform: uppercase; padding: 2px 10px 0 10px; margin-left: 17px; height: 22px; }
+.h-aviso-2 em { font-style: normal; color: #c1d42f; font-family: "Roboto-Medium"; font-size: 14px; }
+.h-aviso-2:hover { background: none;}
+/**/
+.btn-home { background: url(https://www.bancopatagonia.com.ar/personas/images/btn-home.jpg); background-repeat: no-repeat, repeat; text-align: center; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; height: 53px; transition: all 0.3s ease;}
+.btn-home:hover{ background: url(https://www.bancopatagonia.com.ar/personas/images/btn-home.jpg);}
+.btn-home h4 { margin: 0; font-size: 13px; text-transform: uppercase; color: #fff;}
+.btn-home span:hover { display: inline-block; border: 1px solid #00b9ad; font-size: 11px; text-transform: uppercase; color: #fff; padding: 2px 10px 0 10px; margin-left: 17px; height: 22px;}
+/**/
+.h-info-box { border: 1px solid #d2d2d2; padding: 20px 20px 40px 20px; min-height: 125px; height: 100%; position: relative;}
+.h-info-box p {font-size: 14px; line-height: 1.3;}
+.h-info-box .lnk { font-size: 11px; text-transform: uppercase; display: inline-block; position: absolute; left: 20px; bottom: 17px;}
+.h-info-box em { font-style: normal; color: #c1d42f; font-family: "Roboto-Medium"; font-size: 14px;}
+
+/*T3 T4*/
+/*HEAD*/
+.sec-pic-head { background-repeat: no-repeat; background-position: center top; background-size: cover; height: 248px; background-color: #ccc;}
+.sec-pic-area {height: 248px;}
+.sec-head-card {padding: 27px; background: rgb(0,185,173);
+background: -moz-linear-gradient(-45deg, rgba(0,185,173,1) 0%, rgba(0,73,135,1) 100%);
+background: -webkit-linear-gradient(-45deg, rgba(0,185,173,1) 0%,rgba(0,73,135,1) 100%);
+background: linear-gradient(135deg, rgba(0,185,173,1) 0%,rgba(0,73,135,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b9ad', endColorstr='#004987',GradientType=1 ); margin-top: 40px; min-height: 155px; max-width: 335px;}
+.sec-head-card h2 {font-size: 22px; font-family: "Ayra-Regular"; color: #fff; margin: 0 0 20px 0;}
+.sec-head-card .with-border { position: relative; margin-bottom: 25px;}
+.sec-head-card .with-border:after { content: ""; display: block; border-top: 3px solid #c1d42f; width: 30px; position: absolute; left: 0; bottom: -15px;}
+.sec-head-card p { font-size: 14px; color: #fff; margin: 0; line-height: 1.4;}
+
+/*BREADCRUMBS*/
+.breadcrumb {border-radius: 0; font-size: 10px;}
+.breadcrumb, .breadcrumb a {color: #636363;}
+.breadcrumb .active {font-family: "Roboto-Bold";}
+.breadcrumb > li + li:before {padding: 0 2px}
+
+/*TABS*/
+.nav-tabs {width: 100%;}
+.nav-tabs > li > a {border-radius: none; padding: 18px 0 10px 0; height: 55px; text-align: center; font-size: 16px; color: #636363; text-transform: uppercase;}
+.tabs-x2 li {width: 50%; background: #eeeeee;}
+.tabs-x3 li {width: 33.33%; background: #eeeeee;}
+.tabs-x4 li {width: 25%; background: #eeeeee;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { border-bottom: 4px solid #c1d42f;}
+.nav > li > a:hover, .nav > li > a:focus {background-color: #eeeeee;}
+.tab-data, .tab-data-2 { border: 1px solid #eaeaea; padding: 28px; margin-bottom: 60px;}
+
+/*TAB DATA*/
+.tab-data h1 { font-size: 24px; color: #2a4a84; font-family: "Roboto-Bold"; margin-bottom: 30px; line-height: 1.2;}
+.tab-data h2 {font-size: 18px; color: #2a4a84; margin-bottom: 15px; }
+.tab-data h3 {font-size: 16px; color: #004987; margin-bottom: 22px;}
+.tab-data h3 small {font-size: 12px; color: #004987;}
+.tab-data h4 { font-size: 14px; color: #004987; margin-bottom: 20px;}
+.tab-data p {font-size: 14px; margin-bottom: 10px; line-height: 1.4;}
+.tab-data p small {font-size: 11px;}
+.tab-data ul {list-style: none; padding: 0; margin: 0 0 20px 0;}
+.tab-data li { font-size: 14px; margin-bottom: 6px; position: relative; padding-left: 10px; line-height: 1.4;}
+.tab-data ul li:before { content: ""; display: block; width: 3px; height: 3px; background: #636363; border-radius: 100%; position: absolute; left: 0; top: 7px;}
+.tab-data ul ul { margin: 25px 0 25px 15px;}
+.tab-data ul ul li { margin-bottom: 3px;}
+.tab-data li small {font-size: 11px;}
+.tab-data hr { height: 2px; border-top: 2px solid #eeeeee; margin-top: 25px; margin-bottom: 25px;}
+.tab-data figure {margin-bottom: 20px;}
+.tab-data .destacado {color: #004987;}
+.tab-data .cta-btn { display: inline-block; color: #fff; background: #004987; height: 43px; width: 233px; text-align: center; text-transform: uppercase; font-size: 13px; font-family: "Roboto-Medium"; padding-top: 16px;}
+.tab-data h3 .badge {font-size: 12px; font-weight: normal; color: #004987; background-color: #fff; border-radius: 0; text-transform: uppercase; border: 1px solid #c1d42f; padding: 4px 8px; margin-left: 10px; font-family: "Roboto-Medium";}
+.tab-data h3 .badge span { color: #c1d42f;}
+.tab-data p a, .tab-data li a {text-decoration: underline;}
+.tab-data-block {margin-bottom: 70px;}
+.tab-data ol {list-style: none; padding: 0; margin: 0 0 22px 0; counter-reset: ol}
+.tab-data ol li {padding-left: 23px;}
+.tab-data ol li:before {counter-increment: ol; content: counter(ol) "."; position: absolute; left: 0; font-family: "Roboto-Bold";}
+
+/*CONSULTA*/
+.consulta {margin-bottom: 60px;}
+.consulta h4 { font-size: 14px; color: #004987; margin-bottom: 20px; text-align: center;}
+.consulta .lnk {display: block; font-size: 14px; color: #004987; text-transform: uppercase; border: 1px solid  rgb(193, 212, 47); height: 62px; width: 100%; text-align: center; font-family: "Roboto-Medium"; padding-top: 25px;}
+.consulta .lnk-2-lines { padding-top: 15px; line-height: 1.3;}
+.consulta .lnk-2-lines span {font-family: "Roboto-Regular";}
+.consulta .phone { cursor: default;}
+
+/*LEGAL INT*/
+.legal-int { margin-bottom: 20px;}
+.legal-int p, .tab-data .legal-int p, .text-data .legal-int p {margin-bottom: 15px; line-height: 1.2; font-size: 10px; letter-spacing: -0.1px;}/* nuevo: agregado font-size y letter-spacing + .tab-data + .text-data */
+.legal-int h4 {font-size: 12px; margin-bottom: 15px;}
+.legal-int h3 {margin-bottom: 15px; font-size: 24px; line-height: 1.2; font-family: "Roboto-Bold";}
+
+/*LEGAL FLEX (mueve los cft de ubicación, arriba o abajo del resto)*/
+.legal-flex { display: flex; flex-wrap: wrap;}
+.legal-flex .lf-p-cft { order: 2 }
+.legal-flex .lf-cft { order: 3 }
+.legal-flex .lf-p { order: 1 }
+
+/*CONTENIDO STD*/
+.text-data { margin-bottom: 40px;}
+.text-data h1 { font-size: 24px; color: #2a4a84; font-family: "Roboto-Bold"; margin-bottom: 30px; line-height: 1.2em; }
+.text-data h2 {font-size: 18px; color: #2a4a84; margin-bottom: 15px; line-height: 1.2em; }
+.text-data h3 {font-size: 16px; color: #004987; margin-bottom: 22px; line-height: 1.2em; }
+.text-data h3 small {font-size: 12px; color: #004987;}
+.text-data h4 { font-size: 14px; color: #004987; margin-bottom: 20px;}
+.text-data p {font-size: 14px; margin-bottom: 10px; line-height: 1.4;}
+.text-data p small {font-size: 11px;}
+.text-data ul {list-style: none; padding: 0; margin: 0 0 20px 0;}
+.text-data li { font-size: 14px; margin-bottom: 6px; position: relative; padding-left: 10px; line-height: 1.4;}
+.text-data ul li:before { content: ""; display: block; width: 3px; height: 3px; background: #636363; border-radius: 100%; position: absolute; left: 0; top: 7px;}
+.text-data ul ul { margin: 25px 0 25px 15px;}
+.text-data ul ul li { margin-bottom: 3px;}
+.text-data li small {font-size: 11px;}
+.text-data hr { height: 2px; border-top: 2px solid #eeeeee; margin-top: 25px; margin-bottom: 25px;}
+.text-data figure {margin-bottom: 20px;}
+.text-data .video, .tab-data .video {height: 0; padding-bottom: 56.25%; position: relative; width: 100%; margin-bottom: 45px;}
+.text-data .video video, .text-data .video iframe, .tab-data .video iframe {height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
+.text-data .cta-bar { text-align: center}
+.text-data .cta-btn { background: #2a4a84; color: #fff; text-transform: uppercase; font-family: "Roboto-Medium"; display: inline-block; font-size: 16px; padding: 17px 30px; transition: all .3s ease} 
+.text-data .cta-btn:hover { background: #00b9ad;}
+.text-data .btn-float {height: 50px; margin-bottom: 20px;}
+.text-data .cta-btn2 { background: #2a4a84; color: #fff; text-transform: uppercase; font-family: "Roboto-Medium"; display: inline-block; font-size: 13px; padding: 17px 30px; transition: all .3s ease; width: 90%;} 
+.text-data .cta-btn2:hover { background: #00b9ad;}
+
+.text-data .cta-btn-big {background: #2a4a84; color: #fff; text-transform: uppercase; font-family: "Roboto-Medium"; display: inline-block; font-size: 20px; padding: 19px 40px; transition: all .3s ease}
+.text-data .cta-btn-big:hover { background: #00b9ad;}
+.text-data p a, .text-data li a {text-decoration: underline;}
+.text-data .destacado {color: #004987;}
+.text-data .cta-btn { display: inline-block; color: #fff; background: #004987; height: 43px; /*width: 233px;*/ text-align: center; text-transform: uppercase; font-size: 13px; font-family: "Roboto-Medium"; padding-top: 16px;}
+.text-data ol {list-style: none; padding: 0; margin: 0 0 22px 0; counter-reset: ol}
+.text-data ol li {padding-left: 23px;}
+.text-data ol li:before {counter-increment: ol; content: counter(ol) "."; position: absolute; left: 0; font-family: "Roboto-Bold";}
+
+/*LIST CHECK*/
+.tab-data ul.list-check li, .text-data ul.list-check li { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-check.svg) no-repeat; background-size: 18px; padding-left: 24px; }
+.tab-data ul.list-check li:before, .text-data ul.list-check li:before { display: none; }
+
+/*TEXTO ANIMADO*/
+@keyframes txt-animado{
+    0%{ color:#636363;}
+    50%{ color:#bcc94a;}
+    100%{ color:#636363;}
+}
+@-webkit-keyframes txt-animado{
+    0%{ color:#636363;}
+    50%{ color:#bcc94a;}
+    100%{ color:#636363;}
+}
+.txt-animado { animation:txt-animado 2s 1s infinite; -webkit-animation:txt-animado 2s 1s infinite; }
+
+/*BOTON ANIMADO*/
+@keyframes btn-animado{
+    0%{ background:#fff;}
+    50%{background:rgba(193,212,47,0.5)}
+    100%{background:#fff;}
+}
+@-webkit-keyframes btn-animado{
+    0%{ background:#fff;}
+    50%{background:rgba(193,212,47,0.5)}
+    100%{background:#fff;}
+}
+.btn-animado { animation:btn-animado 2s 1s infinite; -webkit-animation:btn-animado 2s 1s infinite;}
+.btn-animado:hover { animation: none; -webkit-animation: none;}
+.active .btn-animado { animation: none !important; -webkit-animation: none !important;}/*desactiva en página*/
+
+/*BOTON ANIMADO 2*/
+@keyframes btn-animado-2{
+    0%{ background:#004987; }
+    50%{ background:#c1d42f; }
+    100%{ background:#004987; }
+}
+@-webkit-keyframes btn-animado-2{
+    0%{ background:#004987; }
+    50%{ background:#c1d42f; }
+    100%{ background:#004987; }
+}
+.btn-animado-2 { animation:btn-animado-2 2s 1s infinite; -webkit-animation:btn-animado-2 2s 1s infinite;}
+.btn-animado-2:hover { animation: none; -webkit-animation: none; background:#c1d42f;}
+
+/*TAG "NUEVO"*/
+.tag-nuevo {background-color: #00b9ad; color: #fff !important; padding: 5px 10px; display: inline-block; margin-bottom: 10px !important;}
+
+/*T5*/
+.beneficios-int { margin-bottom: 45px;}
+.beneficios-int h2 {font-size: 24px; color: #004987; font-family: "Roboto-Bold"; margin-bottom: 45px;}
+.beneficios-int .card {float: left; background: #004987; width: 43%; border-radius: 3px; height: 158px; position: relative;}
+.beneficios-int .card h4 {position: absolute; left: 15px; bottom: 5px; font-size: 14px; text-transform: uppercase; font-family: "Roboto-Medium"; color: #fff; line-height: 1.3; right: 15px; /*nuevo*/ margin-bottom: 5px; }
+.beneficios-int .card .icon { position: absolute; top: 15px; right: 15px;}
+.beneficios-int .card-data {float: left; width: 50%; height: 158px; padding: 15px; margin-bottom: 30px;}
+.beneficios-int .card-data h3 { color: #004982; font-size: 48px; font-family: "Roboto-Bold"; position: relative; margin-bottom: 10px; padding-bottom: 5px;}
+.beneficios-int .card-data h3:after {content: ""; display: block; border-top: 3px solid #c1d42f; width: 30px; position: absolute; left: 0; bottom: 0;}
+.beneficios-int .card-data sup { font-size: 10px; font-family: "Roboto-Medium"; position: relative; top: -28px;}
+.beneficios-int .card-data p { color: #004982; font-size: 12px; line-height: 1.4; margin: 0;}
+.beneficios-int .card-data p small {font-size: 10px;}
+
+/*ICONOS (en color azul)*/
+.cart-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/cart-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.combustible-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/combustible-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.cubiertos-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/cubiertos-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.farmacia-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/farmacia-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.pc-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/pc-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.perfume-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/perfume-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.regalo-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/regalo-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.tijeras-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/tijeras-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.banco-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/banco-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.totem-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/totem-blue-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.card-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/card-blue-icon.svg) no-repeat; background-size: contain; width: 50px; height: 36px;}
+.phone-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/phone-blue-icon.svg) no-repeat; background-size: contain; width: 30px; height: 53px;}
+.avion-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/avion-blue-icon.svg) no-repeat; background-size: contain; width: 42px; height: 53px;}
+.hoteles-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/hoteles-blue-icon.svg) no-repeat; background-size: contain; width: 50px; height: 53px;}
+.ticket-blue-icon { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/ticket-blue-icon.svg) no-repeat; background-size: contain; width: 44px; height: 53px;}
+
+/*ICONOS (en box azul)*/
+.beneficios-int .card .icon-bag { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/bag-icon.svg) no-repeat; background-size: contain; width: 56px; height: 48px;}
+.beneficios-int .card .icon-book { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/book-icon.svg) no-repeat; background-size: contain; width: 44px; height: 60px;}
+.beneficios-int .card .icon-cart { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/cart-icon.svg) no-repeat; background-size: contain; width: 56px; height: 53px;}
+.beneficios-int .card .icon-cubiertos { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/cubiertos-icon.svg) no-repeat; background-size: contain; width: 38px; height: 58px;}
+.beneficios-int .card .icon-hotel { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/hotel-icon.svg) no-repeat; background-size: contain; width: 52px; height: 52px;}
+.beneficios-int .card .icon-ice { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/ice-icon.svg) no-repeat; background-size: contain; width: 58px; height: 60px;}
+.beneficios-int .card .icon-phone { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/phone-icon.svg) no-repeat; background-size: contain; width: 38px; height: 58px;}
+.beneficios-int .card .icon-pintura { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/pintura-icon.svg) no-repeat; background-size: contain; width: 40px; height: 55px;}
+.beneficios-int .card .icon-shop { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/shop-icon.svg) no-repeat; background-size: contain; width: 45px; height: 53px;}
+.beneficios-int .card .icon-show { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/show-icon.svg) no-repeat; background-size: contain; width: 58px; height: 60px;}
+.beneficios-int .card .icon-surtidor { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/surtidor-icon.svg) no-repeat; background-size: contain; width: 44px; height: 60px;}
+.beneficios-int .card .icon-tijeras { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/tijeras-icon.svg) no-repeat; background-size: contain; width: 38px; height: 56px;}
+.beneficios-int .card .icon-garage { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/garage-icon.svg) no-repeat; background-size: contain; width: 48px; height: 48px;}
+.beneficios-int .card .icon-laundry { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/laundry-icon.svg) no-repeat; background-size: contain; width: 45px; height: 54px;}
+.beneficios-int .card .icon-toll { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/toll-icon.svg) no-repeat; background-size: contain; width: 63px; height: 42px;}
+.beneficios-int .card .icon-wheel { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/wheel-icon.svg) no-repeat; background-size: contain; width: 48px; height: 48px;}
+.beneficios-int .card .icon-pharmacy { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/pharmacy-icon.svg) no-repeat; background-size: contain; width: 48px; height: 48px;}
+.beneficios-int .card .icon-parador { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/parador-icon.svg) no-repeat; background-size: contain; width: 46px; height: 50px;}
+.beneficios-int .card .icon-optics { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/optics-icon.svg) no-repeat; background-size: contain; width: 56px; height: 24px;}
+.beneficios-int .card .icon-chocolate { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/chocolate-icon.svg) no-repeat; background-size: contain; width: 50px; height: 50px;}
+.beneficios-int .card .icon-gym { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/gym-icon.svg) no-repeat; background-size: contain; width: 46px; height: 49px;}
+.beneficios-int .card .icon-delivery { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/delivery-icon.svg) no-repeat; background-size: contain; width: 68px; height: 42px;}
+.beneficios-int .card .icon-plane { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/plane-icon.svg) no-repeat; background-size: contain; width: 48px; height: 48px;}
+.beneficios-int .card .icon-pets { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/pets-icon.svg) no-repeat; background-size: contain; width: 48px; height: 59px;}
+.beneficios-int .card .icon-wear { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/wear-icon.svg) no-repeat; background-size: contain; width: 56px; height: 37px;}
+.beneficios-int .card .icon-electro { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/electro-icon.svg) no-repeat; background-size: contain; width: 56px; height: 47px;}
+.beneficios-int .card .icon-toys { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/toys-icon.svg) no-repeat; background-size: contain; width: 54px; height: 53px;}
+
+/**/
+.tarjetas-int.last { margin-bottom: 45px;}
+.tarjetas-int .card {margin-bottom: 45px;}
+.tarjetas-int h2 {font-size: 24px; color: #004987; font-family: "Roboto-Bold"; margin-bottom: 45px;}
+.tarjetas-int h3 { font-size: 18px; color: #004987; margin-bottom: 15px;}
+.tarjetas-int p {font-size: 14px; line-height: 1.3; margin-bottom: 15px;}
+.tarjetas-int .btn-m-info { font-size: 12px; text-transform: uppercase; font-family: "Roboto-Medium"; display: inline-block; border: 1px solid rgb(193, 212, 47); padding: 3px 8px;}
+.tarjetas-int .btn-m-info span {color: rgb(193, 212, 47); font-size: 14px;}
+
+/*T6*/
+.sec-head-int h2 {font-size: 24px; color: #004987; font-family: "Roboto-Bold"; margin-bottom: 10px;}
+.sec-head-int h3 { font-size: 20px; color: #004987; margin-bottom: 40px;}
+/**/
+.nav-tabs-vertical { margin-bottom: 60px; width: 25%; border-bottom: none;}
+.nav-tabs-vertical > li {width: 100%; float: none; margin-bottom: 0;}
+.nav-tabs-vertical > li > a {border-radius: 0; border: 1px solid #00b9ad; border-bottom-color: transparent; margin-right: 0; height: auto; padding: 17px 40px 17px 20px; text-align: left; font-size: 14px; color: #004987; position: relative; line-height: 1.3; transition: all .3s ease;}
+.nav-tabs-vertical > li > a:after {content: "+"; font-size: 16px; color: #c1d42f; position: absolute; top: 32%; right: 20px; font-family: "Roboto-Regular"}
+.nav-tabs-vertical > li.active > a, .nav-tabs-vertical > li.active > a:hover, .nav-tabs-vertical > li.active > a:focus { border: 1px solid #00b9ad; border-bottom-color: transparent; background: #00b9ad; color: #fff; font-family: "Roboto-Medium";}
+.nav-tabs-vertical > li.active > a:after, .nav-tabs-vertical > li.active > a:hover:after, .nav-tabs-vertical > li.active > a:focus:after { color: #fff;}
+.nav-tabs-vertical > li > a:hover {border-color: #00b9ad #00b9ad #00b9ad; color: #fff;}
+.nav-tabs-vertical > li > a:hover:after {color: #fff;}
+.nav-tabs-vertical > li > a:hover, .nav-tabs-vertical > li > a:focus {background-color: #00b9ad;}
+.nav-tabs-vertical > li:last-child { border-bottom: 1px solid #00b9ad}
+.tab-content-vertical .tab-data {border: none; padding: 0;}
+.tab-data-vertical h3 {font-size: 18px; margin-bottom: 15px;}
+.tab-data-vertical h4 { font-size: 14px; color: #004987; margin-bottom: 22px;}
+
+/*T2*/
+.sec-title { color: #2a4a84; font-size: 24px; font-family: "Roboto-Bold"; margin-bottom: 45px;}
+.info-blocks {margin-bottom: 60px;}
+.info-block {padding-bottom: 20px; display: block;}
+.info-block h3 { color: #2a4a84; font-size: 22px; font-family: "Roboto-Bold"; margin-bottom: 10px;}
+.info-block p { color: #2a4a84; font-size: 18px; line-height: 1.3; margin-bottom: 15px;}
+.info-block .btn-m-info { display: inline-block; border-bottom: 3px solid #c5d344; color: #2a4a84; font-size: 11px; position: absolute; left: 15px; bottom: 0; padding-bottom: 4px; padding-right: 10px;}
+.info-block .btn-m-info i { color: #c5d344; font-style: normal; font-size: 13px; font-family: "Roboto-Medium"}
+.info-block .btn-m-placa { position: absolute; font-size: 14px; line-height: 1em; text-align: right; right: 15px; bottom: 0px; background: #c5d344; padding: 9px 20px; margin-bottom: 0; color: #fff; }/* NUEVA PLACA */
+/**/
+.highlight-bar { text-align: center; margin-bottom: 30px; border-top: 1px solid #00478a; border-bottom: 5px solid #00478a; padding-top: 10px;}
+.highlight-bar h3 {margin: 0; text-transform: uppercase; font-size: 18px; padding: 0 0 10px 0; color: #00478a; line-height: 1.3;}
+.highlight-bar p { font-size: 14px; margin: 0; line-height: 1.3;}
+.highlight-bar h3 + p { padding-bottom: 10px; margin-top: -5px;}
+.highlight-bar-int { margin-top: 30px;}
+/**/
+.btn-lnk-block {padding: 15px 50px 15px 0; display: block; border-bottom: 3px solid #c1d42f; margin-bottom: 25px; position: relative;}
+.btn-lnk-block h3 { font-size: 16px; color: #004987; margin: 0; line-height: 1.2;}/* creado */
+.btn-lnk-block h4 { font-size: 14px; color: #004987; margin: 0; line-height: 1.2;}/* modificado font-size: antes 18 */
+.btn-lnk-block h5 { font-size: 14px; color: #004987; margin: 0; line-height: 1.2;}/* creado (dejar de usar) */
+.btn-lnk-block p { font-size: 14px; color: #636363; margin: 8px 0 0 0;}
+.btn-lnk-block .icon { position: absolute; top: 50%; right: 15px; display: block;}
+.btn-lnk-block .icon-download { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-download.svg) no-repeat; background-size: contain; width: 26px; height: 25px; margin-top: -12px;}
+.btn-lnk-block .icon-more { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-more.svg) no-repeat; background-size: contain; width: 18px; height: 18px; margin-top: -9px;}
+.btn-lnk-block .icon-external { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-external.svg) no-repeat; background-size: contain; width: 27px; height: 25px; margin-top: -12px;}
+.btn-lnk-block .icon-logobp { background: url(../images/layout/logo.svg) no-repeat; background-size: contain; width: 160px; height: 25px; margin-top: -12px;}
+.btn-lnk-block .icon-pdf { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-pdf.svg) no-repeat; background-size: contain; width: 26px; height: 32px; margin-top: -16px;}
+.btn-lnk-block .icon-img { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-img.svg) no-repeat; background-size: contain; width: 28px; height: 31px; margin-top: -16px;}
+.btn-group-block-last {margin-bottom: 50px;}
+/**/
+.ssn-bar {margin-bottom: 40px;}
+.ssn-bar ul {display: table; width: 100%; margin-bottom: 40px;}
+.ssn-bar li { display: table-cell; font-size: 12px; line-height: 1.2; text-align: center; border-left: 2px solid rgb(201, 201, 201);}
+.ssn-bar li:first-child {border-left: none;}
+.ssn-bar li a {color: #636363; font-size: 14px;}
+.ssn-bar p {font-size: 14px; margin-bottom: 10px; line-height: 1.4;}
+
+/*T11*/
+.beneficio-box {display: -ms-flexbox; display: flex; height: 120px; -ms-flex-align: end; align-items: flex-end; margin-bottom: 60px;}
+.beneficio-box .card { width: 44%; background: #CAD200; border-radius: 0px 0px 6px; height: 100%; position: relative; }
+.beneficio-box .card-blue {background: #004987;}
+.beneficio-box .card p {margin: 0; position: absolute; left: 38px; bottom: 14px; font-family: "Roboto-Bold"; font-size: 11px; text-transform: uppercase; color: #fff;}
+.beneficio-box .card:after { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 120px 0 0 34px; border-color: transparent transparent transparent #ffffff; display: block;}
+.beneficio-box .card-data {width: 50%; padding-left: 22px;}
+.beneficio-box .card-data h3 { font-size: 44px; font-family: "Roboto-Bold"; color: #004987; margin-bottom: 5px;}
+.beneficio-box .card-data h4 { font-size: 22px; font-family: "Roboto-Bold"; color: #004987; margin-bottom: 5px; text-transform: uppercase; line-height: 1.1;}
+.beneficio-box .card-data sup { font-size: 10px; position: relative; top: -23px;}
+.beneficio-box .card-data h4 sup {top: -9px;}
+.beneficio-box .card-data p { text-transform: uppercase; font-size: 14px; font-family: "Roboto-Bold"; color: #004987; line-height: 1.2; margin: 0;}
+.beneficio-box .card-data span { font-size: 12px; font-family: "Roboto-Regular" }
+.beneficio-box .icon { position: absolute; top: 12px; right: 12px; display: block;}
+/**/
+.beneficio-box-v2 {display: -ms-flexbox; display: flex; height: 120px; -ms-flex-align: end; align-items: flex-end; margin-bottom: 60px;}
+.beneficio-box-v2 .card { width: 44%; background: #CAD200; border-radius: 0px 0px 6px; height: 100%; position: relative; }
+.beneficio-box-v2 .card p {margin: 0; position: absolute; left: 38px; bottom: 14px; font-family: "Roboto-Bold"; font-size: 13px; text-transform: uppercase; color: #fff;}
+.beneficio-box-v2 .card:after { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 120px 0 0 34px; border-color: transparent transparent transparent #ffffff; display: block;}
+.beneficio-box-v2 .card-data {width: 56%; padding-left: 22px;}/* antes: "width: 50%; */
+.beneficio-box-v2 .card-data h3 { font-size: 36px; font-family: "Roboto-Bold"; color: #004987; margin-bottom: 5px; border-bottom: 3px solid #c1d42f; letter-spacing: -2px; padding-bottom: 5px; position: relative;}
+.beneficio-box-v2 .card-data h3 sup { font-size: 10px; position: relative; top: -19px; letter-spacing: normal;}
+.beneficio-box-v2 .card-data h3 small {text-transform: uppercase; font-size: 10px; font-family: "Roboto-Regular"; letter-spacing: normal;}
+.beneficio-box-v2 .card-data h3 span { position: absolute; top: 10px; right: 10px; font-family: "Roboto-Bold"; font-size: 10px; letter-spacing: normal; text-transform: uppercase;}
+.beneficio-box-v2 .card-data h4 { font-size: 13px; font-family: "Roboto-Bold"; color: #004987; text-transform: uppercase; line-height: 1.1; margin: 0;}
+.beneficio-box-v2 .card-data h3.especial { border-bottom: none; padding: 0; margin: 0; color: #00b9ad;}
+.beneficio-box-v2 .card-data h3.especial small {color: #00b9ad;}
+.beneficio-box-v2 .card-data p { text-transform: uppercase; font-size: 9px; font-family: "Roboto-Regular"; color: #004987; line-height: 1.2; margin-bottom: 5px; padding-bottom: 5px; border-bottom: 3px solid #00b9ad;}
+.beneficio-box-v2 .icon { position: absolute; top: 12px; right: 12px; display: block;}
+
+/*ICONOS (en box verde)*/
+.beneficio-box .icon-bag, .beneficio-box-v2 .icon-bag { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/bag-icon.svg) no-repeat; width: 39px; height: 33px;}
+.beneficio-box .icon-book, .beneficio-box-v2 .icon-book { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/book-icon.svg) no-repeat; width: 35px; height: 48px;}
+.beneficio-box .icon-cart, .beneficio-box-v2 .icon-cart { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/cart-icon.svg) no-repeat; width: 49px; height: 47px;}
+.beneficio-box .icon-cubiertos, .beneficio-box-v2 .icon-cubiertos { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/cubiertos-icon.svg) no-repeat; width: 24px; height: 47px;}
+.beneficio-box .icon-hotel, .beneficio-box-v2 .icon-hotel { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/hotel-icon.svg) no-repeat; width: 49px; height: 47px;}
+.beneficio-box .icon-ice, .beneficio-box-v2 .icon-ice { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/ice-icon.svg) no-repeat; width: 42px; height: 42px;}
+.beneficio-box .icon-phone, .beneficio-box-v2 .icon-phone { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/phone-icon.svg) no-repeat; width: 26px; height: 44px;}
+.beneficio-box .icon-pintura, .beneficio-box-v2 .icon-pintura { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/pintura-icon.svg) no-repeat; width: 33px; height: 46px;}
+.beneficio-box .icon-shop, .beneficio-box-v2 .icon-shop { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/shop-icon.svg) no-repeat; width: 37px; height: 44px;}
+.beneficio-box .icon-shop-online, .beneficio-box-v2 .icon-shop-online { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/shop-online-icon.svg) no-repeat; width: 37px; height: 44px;}
+.beneficio-box .icon-show, .beneficio-box-v2 .icon-show { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/show-icon.svg) no-repeat; width: 46px; height: 48px;}
+.beneficio-box .icon-surtidor, .beneficio-box-v2 .icon-surtidor { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/surtidor-icon.svg) no-repeat; width: 35px; height: 48px;}
+.beneficio-box .icon-tijeras, .beneficio-box-v2 .icon-tijeras { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/tijeras-icon.svg) no-repeat; width: 30px; height: 48px;}
+.beneficio-box .icon-garage, .beneficio-box-v2 .icon-garage { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/garage-icon.svg) no-repeat; width: 40px; height: 40px;}
+.beneficio-box .icon-laundry, .beneficio-box-v2 .icon-laundry { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/laundry-icon.svg) no-repeat; width: 38px; height: 46px;}
+.beneficio-box .icon-toll, .beneficio-box-v2 .icon-toll { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/toll-icon.svg) no-repeat; width: 56px; height: 38px;}
+.beneficio-box .icon-wheel, .beneficio-box-v2 .icon-wheel { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/wheel-icon.svg) no-repeat; width: 38px; height: 38px;}
+.beneficio-box .icon-pharmacy, .beneficio-box-v2 .icon-pharmacy { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/pharmacy-icon.svg) no-repeat; width: 38px; height: 38px;}
+.beneficio-box .icon-parador, .beneficio-box-v2 .icon-parador { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/parador-icon.svg) no-repeat; width: 36px; height: 39px;}
+.beneficio-box .icon-optics, .beneficio-box-v2 .icon-optics { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/optics-icon.svg) no-repeat; width: 46px; height: 20px;}
+.beneficio-box .icon-chocolate, .beneficio-box-v2 .icon-chocolate { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/chocolate-icon.svg) no-repeat; width: 40px; height: 40px;}
+.beneficio-box .icon-gym, .beneficio-box-v2 .icon-gym { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/gym-icon.svg) no-repeat; width: 41px; height: 44px;}
+.beneficio-box .icon-delivery, .beneficio-box-v2 .icon-delivery { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/delivery-icon.svg) no-repeat; width: 56px; height: 34px;}
+.beneficio-box .icon-plane, .beneficio-box-v2 .icon-plane { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/plane-icon.svg) no-repeat; width: 40px; height: 40px;}
+.beneficio-box .icon-pets, .beneficio-box-v2 .icon-pets { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/pets-icon.svg) no-repeat; width: 37px; height: 45px;}
+.beneficio-box .icon-wear, .beneficio-box-v2 .icon-wear { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/wear-icon.svg) no-repeat; width: 46px; height: 30px;}
+.beneficio-box .icon-electro, .beneficio-box-v2 .icon-electro { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/electro-icon.svg) no-repeat; width: 46px; height: 38px;}
+.beneficio-box .icon-toys, .beneficio-box-v2 .icon-toys { background: url(https://www.bancopatagonia.com.ar/personas/cuentas/images/toys-icon.svg) no-repeat; width: 43px; height: 42px;}
+
+/**/
+.highlight-bar-2 { background: #EC8059; border-bottom: 5px solid #F5A83D; text-align: center; text-transform: uppercase; margin-top: 18px; margin-bottom: 60px;}
+.highlight-bar-2 .inner { display: inline-block; background: #fff;}
+.highlight-bar-2 p {margin: 0; font-size: 14px; padding: 0 50px 2px 50px; position: relative;}
+.highlight-bar-2 p span {display: inline-block; font-size: 12px; border: 1px solid #004987; font-family: "Roboto-Medium"; padding: 5px 9px; position: relative; top: -3px; margin-left: 20px;}
+.highlight-bar-2 .inner p:before {content: ""; display: block; width: 0; height: 0; border-style: solid; border-width: 0 17px 26px 0; border-color: transparent #ffffff transparent transparent; position: absolute; left: -17px; top: 0;}
+.highlight-bar-2 .inner p:after {content: ""; display: block; width: 0; height: 0; border-style: solid; border-width: 26px 17px 0 0; border-color: #ffffff transparent transparent transparent; position: absolute; right: -17px; top: 0;}
+
+/*MODAL*/
+.modal-content { border-radius: 0; border: 1px solid rgb(181, 181, 181); box-shadow: 0 3px 7px rgba(0,0,0,0.3); padding: 30px;}/* antes padding: 30px 60px */
+.modal-body {padding: 0;}
+.close {font-size: 18px; color: #004982; opacity: 1; font-family: "Roboto-Regular"; font-weight: normal;}
+.modal-title { font-size: 18px; color: #004982;}
+.modal-header {padding: 0 0 20px 0; border-bottom: none;}
+.modal-footer {padding: 15px 0 0 0; border-top: none;}
+/**/
+.external-legend p {font-size: 12px; line-height: 1.3; margin-bottom: 20px;}
+/**/
+.modal-footer .cta-btn { display: inline-block; color: #fff; background: #004987; height: 33px; width: 133px; text-align: center; text-transform: uppercase; font-size: 13px; font-family: "Roboto-Medium"; padding-top: 11px; margin-left: 5px;}
+.modal-footer .cta-btn:hover { background: #00b9ad;}
+.modal-footer .cta-btn-cancel { display: inline-block; color: #fff; background: #ccc; height: 33px; width: 133px; text-align: center; text-transform: uppercase; font-size: 13px; font-family: "Roboto-Medium"; padding-top: 11px; margin-left: 5px;}
+
+/*TABLES*/
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {font-size: 12px; line-height: 1.2;}
+.table > tbody > tr > td.valign-middle {vertical-align: middle}
+.table-fondos > tbody > tr > td { font-size:14px;}/* creado */
+
+/*T7*/
+.form-head { margin-bottom: 45px;}
+.form-head h2 { font-size: 24px; color: #004987; font-family: "Roboto-Bold"; margin-bottom: 15px;}
+.form-head h3 { font-size: 20px; color: #004987; margin-bottom: 15px;}
+/**/
+.formulario { margin-bottom: 40px;}
+label { margin-bottom: 7px; font-weight: normal; font-size: 12px; line-height: 1.2;}
+.form-control { height: 38px; padding: 6px 12px; font-size: 14px; color: #636363; border: 1px solid rgb(210, 210, 210); border-radius: 0; -webkit-box-shadow: none; box-shadow: none;}
+.form-control:focus {border-color: #c1d42f; -webkit-box-shadow: none; box-shadow: none;}
+.form-actions {overflow: hidden;}
+.form-actions .btn { border-radius: 0; width: 128px; height: 32px; text-transform: uppercase; font-size: 14px; float: right; margin-left: 10px;}
+.form-actions .btn-submit { color: #fff; font-family: "Roboto-Medium"; background: #004987;}
+
+/*MAPA EMPRESAS*/
+.cenemp-area { background:rgb(238, 238, 238); background: linear-gradient(rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);}/* creado */
+.cenemp { position:relative; display: inline-block;}
+.cenemp .cenemp-box { position:absolute;}
+.cenemp .cenemp-box .cenemp-puntero { z-index:10000; cursor:pointer;}
+.cenemp .cenemp-box .cenemp-puntero .cenemp-puntero-hover { display:none;}
+.cenemp .cenemp-dialogo { z-index:10001; position:absolute; left:10px; background:#fff; padding:10px; margin:0; border:1px solid #ccc; width: 175px; display:none;}
+.cenemp .cenemp-dialogo .cenemp-cerrar { position: absolute; right: 5px; top: -10px; border-radius: 50%; border: 1px solid #ccc; background: #fff; font-weight: bold; padding: 7px 10px; cursor: pointer; color: #004479; font-size: 11px; line-height: 1em;}/* creado */
+.cenemp .cenemp-dialogo p { padding:0; margin:0; color:#004479; font-size: 11px; line-height:1.4em;}/* modificado: antes font-size 12px; agregado line-height*/
+.cenemp #cenemp-ambanorte { top:39%; right:29%;}
+.cenemp #cenemp-ambasuroeste { top:47%; right:28%;}
+.cenemp #cenemp-atlantica { top:65%; right:19%;}
+.cenemp #cenemp-interiorcentro { top:24%; left:39%;}
+.cenemp #cenemp-interiornorte { top:0%; right:25%;}
+.cenemp #cenemp-interiorsur { top:72%; left:16%;}
+.cenemp #cenemp-microcentro { top:43%; right:23%;}
+.cenemp #cenemp-rosario { top:32%; right:35%;}
+
+/*AGRO BOXES*/
+.agro-logo-box {display: table; margin-bottom: 15px;}
+.agro-logo-box span { display: table-cell; height: 80px; vertical-align: middle;}
+
+/*EBANK EMPRESAS*/
+.login-ebank-empresas a { width: 100%; max-width: 500px;}
+.login-ebank-empresas.color-ebank-empresas a { background: #fff; border: 1px solid #004987; color: #004987;}
+.login-ebank-empresas.color-ebank-empresas a:hover { background: #004987; color: #fff;}
+
+/* NEW BOX BENEFICIOS */
+.bnf-container { position: relative;}
+.bnf-flex { display: flex; }
+/**/
+.bnf-box { display: flex; margin-right: 30px; }
+.bnf-box:last-child { margin-right: 0; }
+.bnf-box p { font-size: 14px; line-height: 1.4em; margin-bottom: 0; }
+/**/
+.bnf-box .bnf-card { position: relative; padding: 15px 40px 15px 80px; min-height: 128.5px; display: inline-block; border-radius: 10px 70px 70px 10px; color: #fff; margin-bottom: 20px; }
+
+.bnf-box .bnf-card big { font-family: 'Roboto-Bold'; font-size: 60px; }
+.bnf-box .bnf-card big span { font-family: 'Roboto-Regular'; font-size: 40px; letter-spacing: -1px; margin-left: 3px; }
+.bnf-box .bnf-card big span sup { font-size: 12px; top: -1.8em; margin-left: 3px; }
+.bnf-box .bnf-card i.bnf-icon { position: absolute; background-repeat: no-repeat; top: 15px; background-position: center; }
+.bnf-box .bnf-card i.bnf-misc { position: absolute; width: 52px; height: 52px; background-repeat: no-repeat; left: 15px; bottom: -15px; }
+/**/
+.bnf-box .bnf-card-data { margin-left: 10px; min-width: 80px; }
+.bnf-box .bnf-card-data.bnf-1-lines { padding-top: 58px; }
+.bnf-box .bnf-card-data.bnf-2-lines { padding-top: 48px; }
+.bnf-box .bnf-card-data.bnf-3-lines { padding-top: 34px; }
+.bnf-box .bnf-card-data.bnf-4-lines { padding-top: 26px; }
+.bnf-box .bnf-card-data.bnf-5-lines { padding-top: 16px; }
+.bnf-box .bnf-card-data.bnf-6-lines { padding-top: 6px; }
+
+/* NEW BOX BENEFICIOS > ICONOS */
+.bnf-icon-books { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-books.svg"); left: 24px; width: 31px; height: 39px; }
+.bnf-icon-car { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-car.svg"); left: 20px; width: 42px; height: 28px; }
+.bnf-icon-card { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-card.svg"); left: 24px; width: 35px; height: 30px; }
+.bnf-icon-cart { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-cart.svg"); left: 20px; width: 40px; height: 35px; }
+.bnf-icon-cart-online { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-cart-online.svg"); left: 20px; width: 40px; height: 35px; }
+.bnf-icon-chocolate { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-chocolate.svg"); left: 22px; width: 40px; height: 42px; }
+.bnf-icon-computer { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-computer.svg"); left: 20px; width: 40px; height: 30px; }
+.bnf-icon-computer-online { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-computer-online.svg"); left: 20px; width: 40px; height: 30px; }
+.bnf-icon-decor { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-decor.svg"); left: 22px; width: 38px; height: 34px; }
+.bnf-icon-food { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-food.svg"); left: 30px; width: 20px; height: 44px; }
+.bnf-icon-fuel { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-fuel.svg"); left: 26px; width: 32px; height: 35px; }
+.bnf-icon-gift { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-gift.svg"); left: 25px; width: 34px; height: 32px; }
+.bnf-icon-glass { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-glass.svg"); left: 20px; width: 37px; height: 34px; }
+.bnf-icon-hotel { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-hotel.svg"); left: 24px; width: 36px; height: 25px; }
+.bnf-icon-icecream { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-icecream.svg"); left: 28px; width: 23px; height: 43px; }
+.bnf-icon-paint { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-paint.svg"); left: 24px; width: 35px; height: 38px; }
+.bnf-icon-perfumery { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-perfumery.svg"); left: 22px; width: 40px; height: 37px; }
+.bnf-icon-pets { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-pets.svg"); left: 24px; width: 35px; height: 36px; }
+.bnf-icon-phone { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-phone.svg"); left: 30px; width: 21px; height: 39px; }
+.bnf-icon-phone-online { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-phone-online.svg"); left: 30px; width: 21px; height: 39px; }
+.bnf-icon-plane { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-plane.svg"); left: 24px; width: 34px; height: 38px; }
+.bnf-icon-scissor { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-scissor.svg"); left: 28px; width: 26px; height: 42px; }
+.bnf-icon-shop { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-shop.svg"); left: 25px; width: 30px; height: 37px; }
+.bnf-icon-shop-online { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-shop-online.svg"); left: 25px; width: 30px; height: 37px; }
+.bnf-icon-tent-parador { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-tent-parador.svg"); left: 22px; width: 33px; height: 35px; }
+.bnf-icon-ticket { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-ticket.svg"); left: 22px; width: 38px; height: 40px; }
+.bnf-icon-toys { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-toys.svg"); left: 22px; width: 38px; height: 34px; }
+.bnf-icon-ski { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-ski.svg"); left: 20px; width: 38px; height: 36px; }
+.bnf-icon-wine { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/icon-wine.svg"); left: 29px; width: 23px; height: 43px; }
+
+/* NEW SEGMENTOS */
+/*.bnf-box*/.bnf-singular .bnf-card/*, .bgd-singular*/ { background-color: #001641; color: #BFE41A; }
+/*.bnf-box*/.bnf-singular i.bnf-misc { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/misc-patagonia-singular.svg");}
+/*.bnf-box*/.bnf-singular .bnf-card-data, .clr-singular { color: #001641 !important; }
+/**/
+/*.bnf-box*/.bnf-clasica .bnf-card/*, .bgd-clasica*/ { background-color: #004987; color: #BFE41A; }
+/*.bnf-box*/.bnf-clasica i.bnf-misc { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/misc-patagonia-clasica.svg");}
+/*.bnf-box*/.bnf-clasica .bnf-card-data, .clr-clasica { color: #004987 !important; }
+/**/
+/*.bnf-box*/.bnf-plus .bnf-card/*, .bgd-plus*/ { background-color: #001641; color: #00D9C5; }
+/*.bnf-box*/.bnf-plus i.bnf-misc { background-image: url("https://www.bancopatagonia.com.ar/assets/images/layout/misc-patagonia-plus.svg");}
+/*.bnf-box*/.bnf-plus .bnf-card-data, .clr-plus  { color: #001641 !important; }
+.bnf-logo-segm { height: 25px; margin: 0 15px 10px 0;}
+
+/* NEW TEMPLATE (MODO) */
+.h1-xl { font-size: 36px !important; }
+.h1-xl img { height: 26px; margin: -4px 0px 0px 4px; }
+.h2-xl { font-size: 26px !important; } 
+.h3-xl { font-size: 20px !important; } 
+.clr-verde { color: #30ccb4 !important; }
+.clr-verde-2 { color: #a9dd00 !important; }
+.clr-violeta { color: #7463f8 !important; }/* nuevo */
+.clr-blanco { color: #fff !important; }
+.clr-azul { color: #1A355F !important; }
+.clr-azul-2 { color: #001641 !important; }
+.bgd-verde { background-color: #30ccb4 !important; }
+.bgd-verde-2 { background-color: #a9dd00 !important; }
+.bgd-verde-3 { background-color: #f6fbe8 !important; }
+.bgd-azul { background-color: #1A355F !important; }
+.bgd-azul-2 { background-color: #001641 !important; }
+.bgd-naranja { background-color: #ED9133 !important; }
+.head-xl { padding: 100px 0; background-repeat: no-repeat; background-position: center right -15px; }
+.head-xl .h1-xl { margin-bottom: 15px !important; }
+.head-xl .h2-xl { margin-bottom: 5px !important; }
+.bgd-gris-1 { background: #f6f6f8 !important; }
+.bgd-gris-2 { background: #eceef1 !important; }
+.bgd-gris-3 { background: #e3e7eb !important; }
+.bgd-gris-4 { background: #d7dfe7 !important; }
+.bgd-gris-1 .container, .bgd-gris-2 .container, .bgd-gris-3 .container, .bgd-gris-4 .container { position: relative; padding-top: 50px; padding-bottom: 25px; }
+.content-xl h2 { display: inline-block; padding: 10px 15px; border-radius: 30px; background-repeat: no-repeat; background-position: center right 20px; }
+.content-xl h2 i { position: absolute; width: 42px; height: 42px; top: 0; margin-left: 20px; background-repeat: no-repeat; }
+.content-xl .title-xl { position: absolute; top: -20px; }
+#img-xl { position: absolute; right: 0; top: 30px; }
+.box-curved { position: relative; border: 2px solid #30ccb4; max-width: 800px; height: 278px; margin: 60px auto; border-radius: 145px; padding: 15px 60px 15px 320px; display: flex; flex-direction: column; justify-content: center; }
+.box-curved img#bc-img { position: absolute; top: -30px; left: -2px; }
+.box-curved h2 { border: 1px solid #1A355F; border-radius: 18px; padding: 5px 15px; display: inline-block; color: #1A355F; }
+.box-curved h2 img { height: 15px; margin: -4px 0px 0px 2px; }
+.box-curved ul { margin-bottom: 0; }
+.box-curved-2 { position: relative; max-width: 960px; height: 388px; margin: 40px auto 90px auto; border-radius: 196px; padding: 15px 60px 15px 370px; display: flex; flex-direction: column; justify-content: center; background: #1A355F; }
+.box-curved-2 img#bc2-img-dsk { position: absolute; top: -15px; left: -880px; }
+.box-curved-2 img#bc2-img-mbl { display: none; }
+.box-curved-2 h2 { color: #30ccb4; }
+.box-curved-2 h2 img { height: 15px; margin: -4px 0px 0px 2px; }
+.box-curved-2 ul, .box-curved-2 ol { margin-bottom: 0; color: #fff; }
+.btn-store { padding: 22px; display: inline-flex; background: #f8f8f8; border-radius: 20px; box-shadow: -5px 5px 5px #e3e3e3; margin: 0 30px 15px 0;}
+.btn-store:nth-child(2) { margin-right: 0px; }
+.btn-store img { height: 22px; }
+
+/* GRAL */
+.p-xl { font-size: 16px !important; } 
+
+/* BONIFICACIÓN POR TRANSACCIONALIDAD (TABLE) */
+.table-bonificacion { margin-bottom: 20px;}
+
+/* FAQS DSPL */
+a.btn-faqs-dspl { font-size: 16px; border: 2px solid #a9dd00; border-radius: 10px; /*box-shadow: 2px 2px 2px #e3e3e3;*/ position: relative; padding: 15px; text-align: center; display: block; margin: 10px 0 10px 50px; color: #001641; }
+a.btn-faqs-dspl i { position: absolute; top: 4px; left: -50px; width: 40px; height: 40px; background: url(https://www.bancopatagonia.com.ar/assets/images/layout/faqs-icon.svg) no-repeat center center; }
+
+/* BOX RADIUS */
+.box-radius-sect { margin-top: 30px; }
+.box-radius-sect .box-radius { border-radius: 25px; border: 1px solid #001641; padding: 25px 20px; }
+.box-radius-sect .box-radius-nobrd { border: none; }
+.box-radius-sect .box-radius figure { position: relative; margin: 15px auto; display: table; }
+/**/
+.box-radius-sect .box-radius.box-radius-segm { position: relative; min-height: 390px; }
+.box-radius-sect .box-radius.box-radius-segm img.box-radius-segm-logo { width: 125px; margin: 0 auto; display: table; }
+.box-radius-sect .box-radius.box-radius-segm img.box-radius-segm-logo#box-radius-segm-logo-sing { width: 114px; }
+.box-radius-sect .box-radius.box-radius-segm figure.box-radius-cards { height: 105px; width: 145px; }
+.box-radius-sect .box-radius.box-radius-segm figure img.box-radius-card-visa, .box-radius-sect .box-radius figure img.box-radius-card-master { position: absolute; transform: rotate(-30deg); top: 20px; width: 100px; }
+.box-radius-sect .box-radius.box-radius-segm figure img.box-radius-card-visa { z-index: 99;  border: 1px solid #fff; left: 8px; }
+.box-radius-sect .box-radius.box-radius-segm figure img.box-radius-card-master { z-index: 98; left: 38px; }
+.box-radius-sect .box-radius.box-radius-segm .box-radius-lnk { position: absolute; bottom: 20px; left: 20px; font-size: 11px; text-transform: uppercase; border-bottom: 3px solid #c1d42f; padding-right: 12px; padding-bottom: 4px; }
+.box-radius-sect .box-radius.box-radius-segm .box-radius-lnk em { font-style: normal; color: #c1d42f; font-size: 15px; }
+.box-radius-sect .box-radius.box-radius-segm .box-radius-lnk span { color: #001641; }
+
+ /* NEW TEMPLATE (JUBILADOS) */
+#tmpl-jubi .text-data h1, #tmpl-jubi .text-data h2, #tmpl-jubi .text-data h3, #tmpl-jubi .text-data h4 { color: #001641; }
+#tmpl-jubi big { font-size: 40px; }
+#tmpl-jubi big span { font-size: 2em; line-height: 0.8em; }
+/*
+.tmpl-jubi-mrg-15 { margin-bottom: 30px !important; }
+.tmpl-jubi-mrg-30 { margin-bottom: 30px !important; }
+.tmpl-jubi-mrg-45 { margin-bottom: 45px !important; }
+.tmpl-jubi-mrg-60 { margin-bottom: 60px !important; }
+*/
+.tmpl-jubi-title, .tmpl-jubi-title-2, .tmpl-jubi-title-3 { display: table; margin: 0 auto 15px auto; text-align: center !important; }
+.tmpl-jubi-title { font-size: 24px !important; }
+.tmpl-jubi-title-2 { font-size: 20px !important; }
+.tmpl-jubi-title-3 { font-size: 18px !important; }
+.tmpl-jubi-title sup, .tmpl-jubi-title-2 sup, .tmpl-jubi-title-3 sup { font-size: 0.5em; top: -1em; }
+.tmpl-jubi-title-dest, .tmpl-jubi-title-dest-2 { border-radius: 2em; padding: 0.5em 1em; /*margin-bottom: 30px !important;*/ }
+.tmpl-jubi-title-dest { border: 1px solid #001641; background: #fff; }
+.tmpl-jubi-title-dest span { border-radius: 1em; padding: 0.2em 0.5em; background-color: #a9dd00; line-height: 1.4em !important; }
+.tmpl-jubi-title-dest-2 { color: #fff !important; background: #001641; }
+.tmpl-jubi-title-dest-2 span { color: #a9dd00; }
+.tmpl-jubi-cont-grey { background: #eeeeee; padding: 20px 45px; margin-bottom: 30px; border-radius: 60px; position: relative; }
+.tmpl-jubi-icon-left, .tmpl-jubi-icon-right { position: absolute; height: 70px; top: 30px; margin: 0; }
+.tmpl-jubi-icon-left { left: -35px; }
+.tmpl-jubi-icon-right { right: -35px; }
+/**/
+img.tmpl-jubi-icon-circle { height: 50px !important; }
+/**/
+.tmpl-jubi-segm { position: relative; display: flex; align-items: center; justify-content: center; background-color: #001641; margin: 30px 0 15px 0; padding: 10px; }
+img.tmpl-jubi-segm-logo { position: absolute; top: -30px; padding: 10px 30px; background: #fff; border: 1px solid #001641; height: 50px; border-radius: 3em; }
+.tmpl-jubi-segm-hasta { border-radius: 30px 30px 30px 0px; text-align: center; color: #001641; padding: 15px 20px; margin-bottom: 10px; }
+.tmpl-jubi-segm-hasta p { margin-bottom: 0px; }
+.tmpl-jubi-segm-hasta big sup { font-family: "Roboto-Regular"; font-size: 0.3em; top: -1.6em; }
+.tmpl-jubi-segm-rubros img { display: block; height: 25px; margin: 0 auto; }
+.tmpl-jubi-segm-rubros p { text-align: center; color: #fff; margin-bottom: 0; }
+#tmpl-jubi-segm-clasica { border-radius: 60px 60px 60px 0px; }
+#tmpl-jubi-segm-clasica .tmpl-jubi-segm-logo { border-color: #a9dd00; }
+#tmpl-jubi-segm-clasica .tmpl-jubi-segm-hasta { background-color: #a9dd00; }
+#tmpl-jubi-segm-plus { border-radius: 60px 60px 0px 60px; }
+#tmpl-jubi-segm-plus .tmpl-jubi-segm-logo { border-color: #00D9C5; }
+#tmpl-jubi-segm-plus .tmpl-jubi-segm-hasta { background-color: #00D9C5; }
+#tmpl-jubi-segm-singular { border-radius: 60px 0px 60px 60px; }
+#tmpl-jubi-segm-singular .tmpl-jubi-segm-logo { border-color: #a9dd00; }
+#tmpl-jubi-segm-singular .tmpl-jubi-segm-hasta { background-color: #a9dd00; }
+/**/
+.tmpl-jubi-paq { display: block; max-width: 360px; margin: 0 auto; }
+.tmpl-jubi-paq h2 { color: #fff !important; background: #001641; text-align: center; border-radius: 20px 20px 0 0; padding: 10px 0; margin-bottom: 0; }
+.tmpl-jubi-paq div.tmpl-jubi-paq-meses { background: #1A355F; margin-bottom: 15px; border-radius: 0 0 20px 20px; padding: 15px 0; }
+.tmpl-jubi-paq big { display: block; text-align: center; color: #fff; }
+.tmpl-jubi-paq big span { color: #a9dd00; }
+/**/
+.tmpl-jubi-cards { display: flex; align-items: center; /*justify-content: center;*/ column-gap: 15px; min-height: 170px; }
+.tmpl-jubi-cards figure { position: absolute; left: -15px; margin-bottom: 0; width: 170px; height: 120px; }
+.tmpl-jubi-cards figure img.tmpl-jubi-card-visa, .tmpl-jubi-cards figure img.tmpl-jubi-card-master { position: absolute; transform: rotate(-30deg); top: 20px; width: 120px; }
+.tmpl-jubi-cards figure img.tmpl-jubi-card-visa { z-index: 99;  border: 1px solid #fff; left: 8px; }
+.tmpl-jubi-cards figure img.tmpl-jubi-card-master { z-index: 98; left: 38px; }
+.tmpl-jubi-cards img.tmpl-jubi-card-segm { height: 40px; margin-left: 18%; }
+.tmpl-jubi-cards .tmpl-jubi-card-line { border-left: 1px solid #636363; padding-left: 20px; }
+.tmpl-jubi-cards a { display: block; text-decoration: underline; color: #636363; font-size: 14px; }
+/**/
+.tmpl-jubi-caract.tmpl-jubi-cont-grey { border-top-left-radius: 0; border-top-right-radius: 0; }
+.tmpl-jubi-caract img { display: table; margin: 0 auto 15px auto; height: 40px; }
+.tmpl-jubi-caract h3 { text-align: center; margin-bottom: 0; }
+/**/
+.tmpl-jubi-ahor { background-color: #001641; background-image: url(https://www.bancopatagonia.com.ar/assets/images/layout/backgrounds/bgd-jubi-ahorros.svg); background-size: 95%; background-repeat: no-repeat; background-position: center center; border-radius: 40px 0px 40px 0px; margin: 60px auto 30px auto; }
+.tmpl-jubi-ahor .tmpl-jubi-title-dest { margin-top: -25px !important; }
+.tmpl-jubi-ahor-box { display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 3em; height: 50px; padding: 15px; margin-bottom: 30px; }
+.tmpl-jubi-ahor-box img { height: 30px; }
+.tmpl-jubi-ahor-box img.tmpl-jubi-ahor-img-xs { height: 25px; }
+.tmpl-jubi-ahor-box img.tmpl-jubi-ahor-img-xxs { height: 20px; }
+.tmpl-jubi-ahor-box p { margin-bottom: 0; color: #001641; font-size: 16px; }
+/**/
+/*.tmpl-jubi-serv { }*/
+.tmpl-jubi-serv-box { position: relative; margin: 0 0 15px 0; padding: 15px 30px; display: flex; align-items: center; justify-content: center; column-gap: 15px; min-height: 110px; }
+.tmpl-jubi-serv-box h3 { margin-bottom: 0; }
+.tmpl-jubi-serv-box h3 a { color: #001641; text-decoration: underline; font-size: 14px; }
+.tmpl-jubi-serv-box.tmpl-jubi-serv-box-esq1 { border-radius: 0px 60px 60px 60px; }
+.tmpl-jubi-serv-box.tmpl-jubi-serv-box-esq2 { border-radius: 60px 0px 60px 60px; }
+.tmpl-jubi-serv-box.tmpl-jubi-serv-box-esq3 { border-radius: 60px 60px 60px 0px; }
+.tmpl-jubi-serv-box.tmpl-jubi-serv-box-esq4 { border-radius: 60px 60px 0px 60px; }
+.tmpl-jubi-serv-box.bgd-azul h3, .tmpl-jubi-serv-box.bgd-azul h3 a { color: #EEEEEE !important; }
+.tmpl-jubi-serv-box.bgd-azul-2 h3, .tmpl-jubi-serv-box.bgd-azul-2 h3 a { color: #EEEEEE !important; }
+#tmpl-jubi-serv-box-club.tmpl-jubi-serv-box { column-gap: 30px; }
+#tmpl-jubi-serv-box-club big { color: #fff; }
+#tmpl-jubi-serv-box-club big sup { font-size: 35%; top: -1.4em; }
+/**/
+/*.tmpl-jubi-btns { margin-bottom: 45px; }*/
+a.tmpl-jubi-btn { color: #001641; background: #a9dd00; font-family: "Roboto-Bold"; font-size: 14px; display: flex; align-items: center; justify-content: center; column-gap: 15px; text-align: center; text-transform: uppercase; padding: 15px; border-radius: 30px; transition: all 0.3s ease; }
+a.tmpl-jubi-btn:hover { background: #00b9ad; }
+a.tmpl-jubi-btn span { color: #001641; border: 1px solid #001641; display: inline-block; font-size: 11px;  padding: 2px 10px 0 10px; height: 22px;}
+a.tmpl-jubi-btn span em { color: #001641; font-style: normal; font-family: "Roboto-Medium"; font-size: 14px; }
+a.tmpl-jubi-btn-clr-2 { color: #a9dd00; background: #001641; margin-bottom: 0; }
+a.tmpl-jubi-btn-clr-2:hover, a.tmpl-jubi-btn-clr-2:hover span, a.tmpl-jubi-btn-clr-2:hover span em { color: #001641; }
+a.tmpl-jubi-btn-clr-2:hover span { border-color: #001641;  }
+a.tmpl-jubi-btn-clr-2 span { color: #a9dd00; border: 1px solid #a9dd00; }
+a.tmpl-jubi-btn-clr-2 span em { color: #a9dd00; }
+a#tmpl-jubi-btn-fxd { position: fixed; right: 10px; bottom: 10px; z-index: 9999; }
+/**/
+.tmpl-jubi-ref { display: flex; align-items: center; justify-content: center; background-repeat: no-repeat; background-position: center center; background-size: 100%; position: relative; margin-bottom: 45px; height: 275px; }
+.tmpl-jubi-ref .tmpl-jubi-ref-box { margin-left: 50% }
+.tmpl-jubi-ref .tmpl-jubi-ref-box h2 { color: #a9dd00 !important; font-size: 24px; }
+.tmpl-jubi-ref .tmpl-jubi-ref-box p { color: #fff !important; }
+.tmpl-jubi-ref a.tmpl-jubi-btn { position: absolute; bottom: -20px; }
+/**/
+.modal-body .text-data h3 { color: #001641; }
+/**/
+.tmpl-jubi-contact { position: relative; display: flex; align-items: center; justify-content: center; border: 1px solid #001641; margin: 45px 0 0 0; padding: 10px; height: 100px; }
+.tmpl-jubi-contact img { position: absolute; top: -30px;/* height: 50px;*/ }
+.tmpl-jubi-contact h3 { margin-bottom: 0px; text-align: center; color: #001641; }
+.tmpl-jubi-contact-box-1 { border-radius: 90px 90px 90px 0px; }
+.tmpl-jubi-contact-box-2 { border-radius: 90px 0pc 90px 90px; }
+.tmpl-jubi-contact-box-3 { border-radius: 90px 90px 0px 90px; }
+
+/* NEW TEMPLATE (PRÉSTAMOS) */
+.tmpl-prst-box, .tmpl-prst-img, .tmpl-prst-cuota { border-radius: 25px; }
+.tmpl-prst-box, .tmpl-prst-cuota { height: 185px; display: flex; align-items: center; justify-content: center; padding: 0 15px; margin-bottom: 25px; column-gap: 15px; }
+.tmpl-prst-box big span sup, .tmpl-prst-cuota big sup { font-size: 14px; top: -1.4em; }
+.tmpl-prst-box .inline-prst { display: inline-block !important; }
+.tmpl-prst-box { background-color: #001641; }
+.tmpl-prst-box big { display: block; font-family: "Roboto-Bold"; font-size: 60px; }
+.tmpl-prst-box big.prst-big-xl { font-size: 110px; }
+.tmpl-prst-box big span { font-size: 0.75em; }
+.tmpl-prst-box h2, .tmpl-prst-box h3, .tmpl-prst-box big { color: #fff; margin-bottom: 0px; }
+.tmpl-prst-img { overflow: hidden; }
+/**/
+a.tmpl-prst-btn-cta, a.tmpl-prst-btn-cta-2 { padding: 15px; text-align: center; display: block; margin: 15px 0; font-size: 14px; border-radius: 25px; }
+a.tmpl-prst-btn-cta { color: #001641; background-color: #a9dd00; }
+a.tmpl-prst-btn-cta:hover { color: #fff; }
+a.tmpl-prst-btn-cta-2 { color: #a9dd00; background-color: #001641; }
+a.tmpl-prst-btn-cta-2:hover { color: #fff; }
+
+/*----------*/
+/*RESPONSIVE*/
+/*----------*/
+@media screen and (max-width: 1199px) {
+	.dsk { display: none;}
+	.tbl { display: inline-block !important;}
+	.mbl { display: none;}
+	/**/
+	.general-links,	.top-links,	.nav-bar {display: none;}
+	.col-dsk-6 {width: 50%;}
+	/**/
+	.c-hamburger {display: block; position: relative; overflow: hidden; width: 44px; height: 32px; text-indent: -9999px; cursor: pointer; transition: background 0.3s; float: left; margin-left: -4px; margin-top: 28px;}
+	.c-hamburger:focus {outline: none;}
+	.c-hamburger span {display: block; position: absolute; top: 13px; left: 4px; right: 4px; height: 3px; background: #d2d2d2;}
+	.c-hamburger span:before,
+	.c-hamburger span:after {position: absolute; display: block; left: 0; width: 100%; height: 3px; background-color: #d2d2d2; content: "";}
+	.c-hamburger span:before {top: -8px;}
+	.c-hamburger span:after {bottom: -8px;}
+	.c-hamburger--htx span {transition: background 0s 0.3s;}
+	.c-hamburger--htx span:before,
+	.c-hamburger--htx span::after {transition-duration: 0.3s, 0.3s; transition-delay: 0.3s, 0s;}
+	.c-hamburger--htx span::before {transition-property: top, transform;}
+	.c-hamburger--htx span::after {transition-property: bottom, transform;}
+	.c-hamburger--htx.is-active span {background: none;}
+	.c-hamburger--htx.is-active span:before {top: 0; transform: rotate(45deg);}
+	.c-hamburger--htx.is-active span:after {bottom: 0; transform: rotate(-45deg);}
+	.c-hamburger--htx.is-active span:before,
+	.c-hamburger--htx.is-active span:after {transition-delay: 0s, 0.3s;}
+	/**/
+	.placeholder-bar {height: 77px;}
+	.header-bar { position: fixed; width: 100%; z-index: 100; box-shadow: 0px 0px 5px 0px rgba(227, 227, 227, 1);}
+	.header-bar header {height: 77px;}
+	.header-bar h1 {float: left; margin-left: 11px;}
+	.main-logo {margin-top: 31px;}
+	/**/
+	.mobile-nav-bar {display: none; background: #eeeeee; padding: 10px 15px 15px 15px; position: fixed; width: 50%; left: 0; top: 77px; z-index: 101; overflow: auto; max-height: calc(100vh - 77px) }
+	.nav-main-item { border-bottom: 1px solid #d2d2d2;}
+	.nav-main-item > ul {display: none;}
+	.nav-main-item:last-child {border-bottom: none}
+	.nav-main-item > a {font-size: 14px; text-transform: uppercase; display: block; padding-top: 10px; padding-bottom: 10px; position: relative;}
+	.nav-main-item > a .fa {color: #cedb65; font-size: 18px; font-weight: bold; position: absolute; right: 0; top: 20%; transition: all .3s ease-in-out; transform: rotate(0deg)}
+	.nav-main-item > a.open .fa { transform: rotate(90deg)}
+	.nav-main-item > a.active, .nav-main-item > a.open {font-family: "Roboto-Bold";}
+	.nav-sub-item:last-child {padding-bottom: 10px;}
+	.nav-sub-item > a { font-size: 12px; text-transform: uppercase; display: inline-block; padding-bottom: 6px; position: relative; margin-bottom: 10px;}
+	.nav-sub-item > a.active:after, .nav-sub-item > a.open:after {content: ""; display: block; border-top: 3px solid #c1d42f; position: absolute; left: 0; bottom: 0; width: 100%;}
+	.submenu {padding: 5px 10px 15px 10px; display: none;}
+	.submenu a {font-size: 12px; display: block; padding: 5px 0;}
+	/**/
+	.footer-bar {padding-top: 16px;}
+	.placeholder-shortlinks {height: 62px;}
+	.shortlinks {height: 62px; background: #fff; box-shadow: 0px 0px 5px 0px rgba(227, 227, 227, 1); position: fixed; left: 0; bottom: 0; width: 100%; z-index: 99;}
+	.shortlinks a {display: block; text-align: center; font-size: 11px; color: #b8b6b7; padding-top: 14px; padding-bottom: 10px;}
+	.shortlinks .icon {display: block; margin: 0 auto 8px auto;}
+	.shortlinks .icon-contacto { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-contacto.svg) no-repeat; width: 23px; height: 20px; margin-top: 3px; background-size: contain;}
+	.shortlinks .icon-sucursales { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-sucursales.svg) no-repeat; width: 25px; height: 20px; margin-top: 3px; background-size: contain;}
+	.shortlinks .icon-canales { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-canales.svg) no-repeat; width: 16px; height: 23px; background-size: contain;}
+	.shortlinks .icon-ebank { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-ebank.svg) no-repeat; width: 24px; height: 14px; margin-top: 5px; background-size: contain;}
+    .shortlinks .icon-padi { background: url(https://www.bancopatagonia.com.ar/assets/images/layout/icon-padi.svg) no-repeat; width: 24px; height: 28px; background-size: contain; margin-top: -2px; margin-bottom: 6px;}
+	.shortlinks .last { background: #c1d42f;}
+	.shortlinks .last a {color: #004987;}
+	/**/
+	.ssn-bar li {font-size: 11px;}
+	.ssn-bar li a {font-size: 13px;}
+	.ssn-bar img { width: 190px; height: auto;}
+	/**/
+	.beneficio-box-v2 .card-data {width: 56%;}
+	/**/
+	.dest-xs-tbl { display: block; width: 100%; }/* nuevo */
+    
+    /* NEW BOX BENEFICIOS */
+    .bnf-flex { display: block; }
+    .bnf-box { margin-right: 0 !important; }
+    
+    /* NUEVA PLACA */
+    .info-block .btn-m-placa { position: relative; display: table; text-align: left; right: 0; margin-bottom: 15px; }
+    .info-block .btn-m-placa br { display: none; }
+	
+	/* NEW TEMPLATE (MODO) */
+    .head-xl { padding: 330px 0 20px 0; background-repeat: no-repeat; background-position: top left 20px; }
+    #img-xl { display: none; }
+    .box-curved-2 { align-items: center; padding: 60px 90px; height: auto; margin-top: 240px; margin-bottom: 60px; }
+    .box-curved-2 img#bc2-img-dsk { display: none; }
+    .box-curved-2 img#bc2-img-mbl { display: block; position: absolute; max-width: 400px; width: 100%; top: -235px; }
+	
+	/* BONIFICACIÓN POR TRANSACCIONALIDAD (TABLE) */
+	.table-bonificacion > thead > tr > th, .table-bonificacion > tbody > tr > th, .table-bonificacion > thead > tr > td, .table-bonificacion > tbody > tr > td { font-size: 10px;}
+	
+	/* NEW TEMPLATE (JUBILADOS) */
+    .tmpl-jubi-ref { height: 225px; }
+    .tmpl-jubi-ref .tmpl-jubi-ref-box { margin-left: 56%; }
+	a#tmpl-jubi-btn-fxd { bottom: auto; top: 15px; }
+	
+	/* NEW TEMPLATE (PRÉSTAMOS) */
+	.tmpl-prst-box, .tmpl-prst-cuota { height: 152px; }
+}
+
+@media screen and (max-width: 991px) {
+	.placeholder-top {display: block; height: 58px;}
+	.placeholder-top + .placeholder-bar .header-bar {top: 58px;}
+	.placeholder-top[style*="none"] + .placeholder-bar .header-bar {top: 0;}
+	.topbanner {position: fixed; width: 100%; left: 0; top: 0; z-index: 100; background: #fff; border-bottom: 2px solid #d6e274;}
+	.topbanner a {display: block;}
+	.placeholder-top + .placeholder-bar + .nav-bar + .mobile-nav-bar {top: 135px;}
+	.placeholder-top[style*="none"] + .placeholder-bar + .nav-bar + .mobile-nav-bar {top: 77px;}
+	.close-this-banner { display: block; width: 30px; height: 30px; background: url(https://www.bancopatagonia.com.ar/assets/images/layout/close-app-banner.svg) no-repeat center center; position: absolute; top: 5px; right: 5px; cursor: pointer}/* modificado */
+	/**/
+	.h-destacado a figcaption {font-size: 12px; /*width: 176px;*/ height: 35px; padding-top: 13px;}
+	.h-destacado a .logo-club { width: 103px; height: auto;}
+	.h-destacado a .dest-xl-dsk { display: none; }/* nuevo */
+	.h-destacado a .dest-xl-mbl { display: block; }/* nuevo */
+	/**/
+	.h-info-box {padding: 10px 10px 30px 10px;}
+	.h-info-box p br {display: none;}
+	.h-info-box span { left: 10px; bottom: 7px;}
+	/**/
+	.beneficios-int .card {width: 50%;}
+	.beneficios-int .card-data p br {display: none;}
+	/**/
+	.nav-tabs-vertical { width: 33.33333333%;}
+	/**/
+	.beneficio-box .card {width: 50%;}
+	.highlight-bar-2 p {padding: 0 20px 2px 20px;}
+	/**/
+	.ssn-bar ul {overflow: hidden;}
+	.ssn-bar li {display: block; float: left; width: 33%; height: 40px; padding-top: 10px;}
+	.ssn-bar li:nth-child(4) { clear: left; width: 50%; margin-top: 15px; border-left: none;}
+	.ssn-bar li:nth-child(5) {width: 50%; margin-top: 15px;}
+	
+	/* BOX RADIUS */
+    .box-radius-sect .box-radius { margin-bottom: 30px; }
+    .box-radius-sect .box-radius-last { margin-bottom: 0px; }
+    /*.box-radius-sect .col-sm-6:nth-child(3n) { clear: both; }*/
+    .box-radius-sect .box-radius.box-radius-segm { min-height: 370px; }
+	
+	/* NEW TEMPLATE (JUBILADOS) */
+    .tmpl-jubi-ahor { background-image: none; }
+    /**/
+    .tmpl-jubi-ref { background: #1A355F !important; height: auto; padding: 30px; border-radius: 30px; }
+    .tmpl-jubi-ref .tmpl-jubi-ref-box { margin-left: 0px; }
+    .tmpl-jubi-ref .tmpl-jubi-ref-box h2, .tmpl-jubi-ref .tmpl-jubi-ref-box p { text-align: center; }
+    .tmpl-jubi-ref a.tmpl-jubi-btn { bottom: -35px; }
+	
+	/* NEW TEMPLATE (PRÉSTAMOS) */
+    .tmpl-prst-box { height: 115px; }
+    .tmpl-prst-cuota { height: 175px; }
+    .tmpl-prst-box big { font-size: 40px; }
+    .tmpl-prst-box big.prst-big-xl { font-size: 80px; }
+    .tmpl-prst-cuota big { font-size: 28px; }
+}
+
+@media screen and (max-width: 850px) {
+    .tmpl-jubi-icon-left, .tmpl-jubi-icon-right { display: none; }
+}
+
+@media screen and (max-width: 767px) {
+    .home-slider .xs-head-position-x-55, .sec-head .xs-head-position-x-55 {background-position-x: 55%;}
+    .home-slider .xs-head-position-x-60, .sec-head .xs-head-position-x-60 {background-position-x: 60%;}
+    .home-slider .xs-head-position-x-65, .sec-head .xs-head-position-x-65 {background-position-x: 65%;}
+    .home-slider .xs-head-position-x-70, .sec-head .xs-head-position-x-70 {background-position-x: 70%;}
+    .home-slider .xs-head-position-x-75, .sec-head .xs-head-position-x-75 {background-position-x: 75%;}
+    .home-slider .xs-head-position-x-80, .sec-head .xs-head-position-x-80 {background-position-x: 80%;}
+    .home-slider .xs-head-position-x-85, .sec-head .xs-head-position-x-85 {background-position-x: 85%;}
+    .home-slider .xs-head-position-x-90, .sec-head .xs-head-position-x-90 {background-position-x: 90%;}
+    .home-slider .xs-head-position-x-95, .sec-head .xs-head-position-x-95 {background-position-x: 95%;}
+    .home-slider .xs-head-position-x-100, .sec-head .xs-head-position-x-100 {background-position-x: 100%;}
+    /**/
+	.dsk { display: none;}
+	.tbl { display: none !important;}
+	.mbl { display: inline-block !important;}
+	/**/
+    .no-mbl { display: none !important;}/* nuevo */
+    /**/
+	.col-dsk-6 {width: auto}
+	/**/
+	.c-hamburger {width: 28px; height: 28px; margin-top: 19px;}
+	.c-hamburger span:before {top: -6px;}
+	.c-hamburger span:after {bottom: -6px;}
+	/**/
+	.placeholder-bar {height: 60px;}
+	.header-bar header {height: 60px;}
+	.header-bar h1 {float: left; margin-left: 6px;}
+	.main-logo { margin-top: 23px; /*margin-top: 26px;*/ width: 128px; height: 24px; /*height: 14px;*/ background-size: contain;}
+	/**/
+	.placeholder-top + .placeholder-bar + .nav-bar + .mobile-nav-bar {top: 118px;}
+	.mobile-nav-bar {width: 100%; top: 60px; max-height: calc(100vh - 61px); overflow: auto;}
+	.placeholder-top + .placeholder-bar + .nav-bar + .mobile-nav-bar {max-height: calc(100vh - 118px);}
+	.placeholder-top[style*="none"] + .placeholder-bar + .nav-bar + .mobile-nav-bar {top: 60px;}
+	.mobile-nav-bar[style*="none"] {width: 100%; top: 60px; max-height: calc(100vh - 61px); overflow: auto;}
+	/**/
+	.home-slider { height: auto; margin-bottom: 35px;}
+	.home-slider .slick-dots {display: none !important;}
+	.home-slide {position: relative;}
+	.home-slider .home-slide { background-size: 260%}
+	.home-slider .col-xs-12 { padding-left: 0; padding-right: 0; position: absolute; left: 0; bottom: 0px; z-index: 50;}
+	.slide-card { margin-top: 0; padding: 27px 15px; max-width: 100%; min-height: 165px;}
+	.slide-card h2 {margin: 0 0 10px 0;}
+	.slide-card .logo-pat-mobil {width: 180px; height: auto}
+	.slide-card h4 { font-size: 20px;}
+	.slide-card .with-border {margin-bottom: 25px;}
+	.slide-card .with-border:after {width: 22px; border-top-width: 2px;}
+	.slide-card p {font-size: 13px;}
+	/**/
+	.h-destacado a img {width: 100%;}
+	.h-destacado a figure { padding-bottom: 25px;}
+	.h-destacado a figcaption {/*font-size: 10px;*/ line-height: 1.2; height: auto; padding: 8px}
+	.h-destacado a .logo-club { width: 80px; margin-top: 0;}
+	/**/
+	.equal-height {flex-wrap: wrap;}
+	/**/
+	.h-destacado-bot { padding-top: 30px;}
+	/**/
+	.h-aviso span {display: none;}
+	.h-aviso {/*text-align: left;*/ padding: 20px 10px; height: auto;}
+	.h-aviso h4 {font-size: 14px; line-height: 1.4;}
+    /**/
+    .h-aviso-2 span {display: none;}
+    .h-aviso-2 {/*text-align: left;*/ padding: 20px 10px; height: auto;}
+    .h-aviso-2 h4 {/*font-size: 14px;*/ line-height: 1.4;}
+	/**/
+	.h-info-box-bot { margin-top: 30px;}
+	/**/
+	.flnks span {display: none;}
+	.flnks a {display: block; line-height: 1.2em; margin: 0 0 12px 0;}
+    .flnks a:first-child { margin-top: 8px; }
+    .flnks a:last-child { margin-bottom: 20px; }
+	/**/
+	.redes {display: inline-block; width: 100%; text-align: center}
+	.redes span { padding-right: 0; display: block; padding-bottom: 12px;}
+	.flegal {font-size: 11px;}
+	/**/
+	.sec-pic-head { background-size: 240%;}
+	.sec-head-card {margin-top: 0; position: absolute; left: 0; bottom: 0; width: 100%; min-height: auto; max-width: 100%;}
+	.tabs-x2 li {width: 100%;}/* antes oculto */
+    .tabs-x3 li {width: 100%;}
+    .tabs-x4 li {width: 100%;}
+	.nav-tabs > li > a {margin-right: 0;}
+	.consulta .lnk { margin-bottom: 20px;}
+	.consulta .lnk.last { margin-bottom: 0px;}
+	/**/
+	.btn-lnk { padding: 15px 0;}
+	.btn-lnk .icon { right: 0px;}
+	/**/
+	.equal-height.info-blocks {display: block; margin-bottom: 0;}
+	.info-block {margin-bottom: 20px;}
+	.info-block .btn-m-info {position: static;}
+    .info-block .btn-m-placa { font-size: 12px; }/* NUEVA PLACA */
+	/**/
+	.shortlinks .icon {display: block; margin: 2px auto 2px auto;}
+	.shortlinks .icon-contacto { margin-top: 3px;}
+	.shortlinks .icon-sucursales { margin-top: 3px;}
+	.shortlinks a {font-size: 10px;}
+	.shortlinks .icon-contacto { margin-top: -6px; margin-bottom: 2px;}
+	.shortlinks .icon-sucursales {margin-top: -6px; margin-bottom: 2px;}
+	.shortlinks .icon-canales { margin-top: -6px; margin-bottom: 2px;}
+    .shortlinks .icon-padi { margin-top: -7px; /*margin-bottom: 2px;*/}
+	/**/
+	.highlight-bar-2 p {line-height: 1.2;}
+	.highlight-bar-2 p span { margin-top: 15px; margin-left: 6px; margin-right: 6px;}
+	/**/
+	.tab-data h3 {font-size: 14px;}
+	.tab-data h4 {font-size: 12px;}
+	.tab-data li {font-size: 12px;}
+	.tab-data p {font-size: 12px;}
+    /*.tab-data .legal-int p, .text-data .legal-int p {font-size: 10px;}*//* parche */
+	/**/
+	.btn-lnk-block h3 {font-size: 14px;}/* creado */
+	.btn-lnk-block h4 {font-size: 12px;}/* modificado font-size: antes 14 */
+	.btn-lnk-block h5 {font-size: 12px;}/* creado (dejar de usar) */
+	.btn-lnk-block p {font-size: 12px;}
+	.destacado-int h3 {font-size: 20px;}
+	.destacado-int p {font-size: 14px;}
+	.mt30 {margin-top: 0px;}
+	/**/
+	.text-data h1 {font-size: 22px; margin-bottom: 20px; line-height: 1.3;}
+	.text-data h2 {font-size: 16px;}
+	.text-data ul li {font-size: 12px;}
+	.text-data ul li:before {top: 3px;}
+	/**/
+	.nav-tabs > li > a {font-size: 14px;}
+	.text-data .cta-btn {font-size: 14px; height: auto; padding-bottom: 16px; line-height: 1.2;}
+	/**/
+	.beneficios-int h2 {font-size: 22px;}
+	/**/
+	.sec-head-int h2 {font-size: 18px;}
+	.sec-head-int h3 {font-size: 14px;}
+	/**/
+	.sec-title {font-size: 18px; margin-bottom: 30px;}
+	.info-block h3 {font-size: 14px; margin-bottom: 5px;}
+	.info-block p {font-size: 12px; margin-bottom: 10px;}
+	.highlight-bar destacado {font-size: 12px; margin-bottom: 10px;}
+	.info-block .btn-m-info {font-size: 10px;}
+	.highlight-bar p {font-size: 12px;}/*antes: font-size: 16px*/
+	.tarjetas-int .btn-m-info {font-size: 10px;}
+	/**/
+	.ssn-bar {margin-top: 45px;}
+	.ssn-bar li:nth-child(1) {width: 50%;}
+	.ssn-bar li:nth-child(2) {width: 50%;}
+	.ssn-bar li:nth-child(3) {clear: left; width: 50%; margin-top: 15px; border-left: none;}
+	.ssn-bar li:nth-child(4) { clear: none; width: 50%; margin-top: 15px; border-left: 2px solid rgb(201, 201, 201);}
+	.ssn-bar li:nth-child(5) {width: 100%; margin-top: 15px; border-left: none;}
+	.ssn-bar p {font-size: 11px;}
+	/**/
+	.formulario .mb-18 {margin-bottom: 18px;}
+	/**/
+	.tab-data h1 {font-size: 20px;}
+	/**/
+	.beneficio-box-v2 .card p {padding-right: 5px; font-size: 10px;}
+	/**/
+	.modal-content { padding: 30px 15px;}/* creado */
+	
+	/* NEW TEMPLATE (MODO) */
+    .h1-xl { font-size: 26px !important; }
+	.h1-xl img { height: 20px; }
+    .h2-xl { font-size: 20px !important; }
+	.h3-xl { font-size: 16px !important; }
+    .bgd-gris-1 .container, .bgd-gris-2 .container, .bgd-gris-3 .container, .bgd-gris-4 .container { padding-top: 25px; padding-bottom: 0px; }
+    .content-xl { background-repeat: no-repeat; background-position: center right; background-size: 25%; }
+    .box-curved { border: none; height: auto; padding: 0; align-items: center; }
+    .box-curved h2 img { height: 13px; }
+    .box-curved img#bc-img { position: relative; top: auto; left: auto; margin-bottom: 30px; }
+    .box-curved-2 { border-radius: 90px; padding: 60px 60px; }
+	
+	/*AGRO BOXES*/
+	.convenio-logo { margin-bottom: 25px;}/* nuevo: en convenios agro*/
+	
+	/* NEW TEMPLATE (JUBILADOS) */
+    /*
+	.tmpl-jubi-mrg-30 { margin-bottom: 10px !important; }
+    .tmpl-jubi-mrg-45 { margin-bottom: 15px !important; }
+    .tmpl-jubi-mrg-60 { margin-bottom: 30px !important; }
+	*/
+    /**/
+    .tmpl-jubi-caract { padding-top: 30px; /*padding-bottom: 0px;*/ }
+    .tmpl-jubi-caract h3 { margin-bottom: 30px; }
+    /**/
+    a.tmpl-jubi-btn span { display: none; }
+	a#tmpl-jubi-btn-fxd { top: 8px; }
+}
+
+@media screen and (max-width: 700px) {
+    /* NEW BOX BENEFICIOS */
+    .bnf-box { display: block; }
+    .bnf-box .bnf-card-data { margin-left: 0; }
+    .bnf-box .bnf-card-data p { display: inline-block; }
+    .bnf-box .bnf-card-data.bnf-1-lines, .bnf-box .bnf-card-data.bnf-2-lines, .bnf-box .bnf-card-data.bnf-3-lines, .bnf-box .bnf-card-data.bnf-4-lines, .bnf-box .bnf-card-data.bnf-5-lines, .bnf-box .bnf-card-data.bnf-6-lines { padding-top: 0px; margin-bottom: 10px; }/* line cancel*/
+    /**/
+    .bnf-container /*.bnf-box*/.bnf-clasica, .bnf-container /*.bnf-box*/.bnf-plus, .bnf-container /*.bnf-box*/.bnf-singular { margin-top: 20px; }
+    .bnf-container /*.bnf-box*/.bnf-clasica:nth-child(1), .bnf-container /*.bnf-box*/.bnf-singular:nth-child(1) { margin-top: 0px; }
+}
+
+@media screen and (max-width: 580px) {
+    .h-destacado-xl .col-xs-6 { width: 100%; }
+}
+
+@media screen and (max-width: 560px) {
+	/* GRAL */
+	.p-xl { font-size: 14px !important; } 
+	
+    /* NEW TEMPLATE (JUBILADOS) */
+    .tmpl-jubi-cards { display: block; padding: 30px; }
+    .tmpl-jubi-cards .tmpl-jubi-card-line { border-left: none; padding-left: 0; }
+    .tmpl-jubi-cards figure { position: relative; margin: 0 auto 30px auto; display: table; left: 0; }
+    .tmpl-jubi-cards img.tmpl-jubi-card-segm { display: table; margin: 0 auto 15px auto; }
+    .tmpl-jubi-cards ul li, .tmpl-jubi-cards a { text-align: center; margin-left: auto; margin-right: auto; display: table; }
+    .tmpl-jubi-cards a { font-size: 12px; }
+    /**/
+    .tmpl-jubi-ahor-box img { height: 25px; }
+    .tmpl-jubi-ahor-box img.tmpl-jubi-ahor-img-xs { height: 20px; }
+	.tmpl-jubi-ahor-box img.tmpl-jubi-ahor-img-xxs { height: 15px; }
+    /**/
+    .tmpl-jubi-serv-box { padding-top: 30px; padding-bottom: 30px; }
+    #tmpl-jubi-serv-box-club.tmpl-jubi-serv-box, #tmpl-jubi-serv-box-club img, #tmpl-jubi-serv-box-club big { display: block; }
+    #tmpl-jubi-serv-box-club img { margin: 0 auto 15px auto; }
+    #tmpl-jubi-serv-box-club big, #tmpl-jubi-serv-box-club h3 { text-align: center; }
+	
+	/* NEW TEMPLATE (PRÉSTAMOS) */
+    .tmpl-prst-box, .tmpl-prst-img, .tmpl-prst-cuota { border-radius: 15px; }
+    .tmpl-prst-cuota { height: 115px; }
+	
+}
+
+@media screen and (max-width: 550px) {
+	/* antes: max-width: 500px */
+	/*.cenemp-area {text-align: left !important;}*//* deshabilitado */
+	/*.cenemp {overflow-x: auto; width: 100%; padding-bottom: 30px;}*//* deshabilitado */
+	.cenemp #cenemp-ambanorte .cenemp-dialogo, .cenemp #cenemp-ambasuroeste .cenemp-dialogo, .cenemp #cenemp-atlantica .cenemp-dialogo, .cenemp #cenemp-interiornorte .cenemp-dialogo, .cenemp #cenemp-microcentro .cenemp-dialogo, .cenemp #cenemp-rosario .cenemp-dialogo { right:10px; left:auto;}/* creado */
+	.cenemp #cenemp-ambanorte .cenemp-dialogo .cenemp-cerrar, .cenemp #cenemp-ambasuroeste .cenemp-dialogo .cenemp-cerrar, .cenemp #cenemp-atlantica .cenemp-dialogo .cenemp-cerrar, .cenemp #cenemp-interiornorte .cenemp-dialogo .cenemp-cerrar, .cenemp #cenemp-microcentro .cenemp-dialogo .cenemp-cerrar, .cenemp #cenemp-rosario .cenemp-dialogo .cenemp-cerrar { left:5px; right:auto;}/* creado */
+	
+	/* NEW TEMPLATE (MODO) */
+    .content-xl { background-size: 35%; }
+    .content-xl .title-xl { position: relative; margin-top: -30px; }
+    .box-curved-2 { border-radius: 30px; padding: 60px 30px 45px; margin-top: 180px; }
+    .box-curved-2 img#bc2-img-mbl { width: 330px; top: -194px; }
+	
+	/* FAQS DSPL */
+	a.btn-faqs-dspl { font-size: 16px; }
+	
+	/* BOX RADIUS */
+    .box-radius-sect .col-xs-6 { width: 100%;}
+    .box-radius-sect .box-radius-nobrd { padding: 0 20px; }
+}
+
+@media screen and (max-width: 430px) {
+    /* BOX RADIUS */
+    .box-radius-sect .box-radius.box-radius-segm { min-height: auto; }
+    .box-radius-sect .box-radius.box-radius-segm .box-radius-lnk { position: relative; bottom: auto; left: auto; }
+}
+@media screen and (max-width: 380px) {
+	.home-slider .home-slide {background-size: 300%;}
+	/**/
+	.h-destacado .col-xs-6, .h-destacado .col-xs-4 { width: 100%;}
+	.h-destacado a img {width: 100%;}
+	.h-destacado a figure { padding-bottom: 25px;}
+	.h-destacado a figcaption {font-size: 15px; /*width: 213px;*/ height: 40px;}
+	.h-destacado a .logo-club { width: 123px; margin-top: 0;}
+	/**/
+	.h-destacado-2s .col-xs-6 {width: 100%;}
+	.h-destacado-2 {padding-bottom: 15px; padding-top: 15px;}
+	.h-destacado-2 h3 {font-size: 16px;}
+	.h-destacado-2 br {display: none;}
+	.h-destacado-2 .lnk {width: 100%; padding: 0; text-align: right;}
+	.h-destacado-2 .lnk span {display: none;}
+	.h-destacado-2 em { position: absolute; right: 2px; top: -35px;}
+	.h-destacado-2 .btn:after {border-top-width: 3px;}
+	/**/
+	.mb60-h {margin-bottom: 40px;}
+	.mb50-h {margin-bottom: 35px;}
+	.mb40-h {margin-bottom: 30px;}
+	.mb30-h {margin-bottom: 20px;}
+	.mb20-h {margin-bottom: 15px;}
+	/*.mb15-h {margin-bottom: 15px;}*/
+	/**/
+	.h-info-boxes .col-xs-6 {width: 100%;}
+	.h-info-box { padding: 15px 0px; border: none; border-bottom: 1px solid #d2d2d2; min-height: 100%;}
+	.h-info-box p {margin: 0; font-size: 12px;}
+	.h-info-box .lnk { left: 0; bottom: 0; width: 100%; text-align: right; padding: 0;}
+	.h-info-box .lnk span {display: none;}
+	.h-info-box em { position: absolute; right: 2px; top: -30px;}
+	.h-info-box-img { margin-top: 30px; margin-bottom: 30px;}
+	.h-info-box-img img {width: 100%;}
+	.h-info-box-bot { margin-top: 0px;}
+	/**/
+	.sec-pic-head { background-size: 270%;}
+	/**/
+	.beneficios-int .card-data p br {display: none;}
+	.beneficios-int .card-data sup {right: -5px;}
+	.beneficios-int .card h4 {font-size: 12px;}
+	/**/
+	.beneficio-box-v2 .card-data h3 {font-size: 26px;}
+	.beneficio-box-v2 .card-data h3 sup {top: -12px;}
+	.beneficio-box-v2 .card-data h3 span {top: 0;}
+	/**/
+	.dest-xs-tbl { display: none; }/* nuevo */
+	.dest-xs-mbl { display: block; }/* nuevo */
+}
+@media screen and (max-width: 370px) {
+	.sec-pic-head { background-size: 280%;}
+	/**/
+	.ssn-bar li {font-size: 10px;}
+	.ssn-bar li a {font-size: 11px;}
+}
+@media screen and (max-width: 330px) {
+	.home-slider .home-slide { background-size: 300%}
+	.sec-pic-head { background-size: 270%;}
+}

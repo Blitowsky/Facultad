@@ -1,0 +1,2 @@
+Usuario/Documento: NombreUsuario | Clave: 1234
+Usuario/Documento: 98765432 | Clave: 1234
